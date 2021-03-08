@@ -18,4 +18,5 @@ This is the repo for my personal portfolio.
 `/dist/js/` - contains all JavaScript component files. \
 
 ## 📌 Resources
+- [Google Material Design](https://material.io/)
 - [Material Design - Dark Theme](https://material.io/design/color/dark-theme.html#ui-application)
