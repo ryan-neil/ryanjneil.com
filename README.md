@@ -3,7 +3,9 @@
 </p>
 
 ## Introduction
-This is the repo for my personal portfolio. 
+This is the repo for my personal portfolio.
+
+[View the live site >>](https://www.josephskycrest.com/)
 
 ###### Let's connect on Twitter! 🤙🏻
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/josephskycrest.svg?style=social&label=Follow%20%40josephskycrest)](https://twitter.com/josephskycrest)
