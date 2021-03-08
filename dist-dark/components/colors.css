@@ -20,17 +20,17 @@ Page Reset
 */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 1rem; /* 16px */
-  color: var(--p-text);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1rem; /* 16px */
+	color: var(--p-text);
 }
 
 html {
-  scroll-behavior: smooth
+	scroll-behavior: smooth;
 }
 
 /* 
@@ -40,35 +40,24 @@ Colors
 */
 
 :root {
-	/* Primary */
-  --white: #ffffff;
-  --light: #f5f5f5;
-  --dark-light: #242629;
-  --dark-medium: #16161a;
-  --cta: #ffd800;
-	--blue: #0479F1;
-	/* Neon Theme */
-	--neon-dark: #01041E;
-  --neon-teal: #30BDE5;
-	--neon-purple: #A129F2;
-	--neon-pink: #D95CE4;
-  /* Typography Light */
-  --p-text: #2e2e2e;
-  --h-text: #181818;
-	--btn-text: #181818;
-	/* Typography Dark */
-  --p-text-dark: #fff3ec;
-  --h-text-dark: #fffffe;
-	--btn-text-dark: #fffffe;
-	/* Companies */
-	--google-yellow: #F4B400;
-	--google-red: #DB4437;
-	--google-blue: #4285F4;
-	--apple-blue: #0479F1;
-	--fb-blue: #4267B2;
-	--spotify-green: #1DB954;
-	--airbnb-coral: #FF585D;
-	--ferrari-red: #CD212A;
+	--white: #ffffff;
+	--light: #f5f5f5;
+	--background-dark: #121212;
+	--background-med: #262626;
+	--background-light: #343434;
+	--primary-color: #bb86fc;
+	--primary-variant-color: #3700b3;
+	--secondary-color: #03dac5;
+	--error: #cf6679;
+	/* Typography */
+	--text-dark-high: #ffffff;
+	--text-dark-med: #e3e3e3;
+	--text-dark-low: #989898;
+	/* Accent Colors */
+	--green-dark: #00bd3e;
+	--neon-blue: #0588ff;
+	--neon-red: #ed1926;
+	--neon-orange: #ff8222;
 }
 
 /* 
@@ -80,14 +69,14 @@ Typography
 h1,
 h2,
 h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  color: var(--h-text);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: var(--h-text);
 }
 
 p {
-  line-height: 1.6rem;
-  margin-bottom: 0.85rem;
+	line-height: 1.6rem;
+	margin-bottom: 0.85rem;
 }
 
 /* 
@@ -102,5 +91,5 @@ Start Code Here
 =================================
 */
 @media screen and (max-width: 51rem) {
-  /* Code goes here */
+	/* Code goes here */
 }

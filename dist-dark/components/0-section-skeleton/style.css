@@ -1,0 +1,82 @@
+/* 
+==========================
+Fonts
+==========================
+*/
+/* Reenie Beanie (Logo Font) */
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+/* Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* 
+==========================
+Colors
+==========================
+*/
+:root {
+    /* Portfolio Colors */
+	--primary-color: #0479F1;
+    --primary-color-dark: #0060d3;
+    --white: #ffffff;
+	--light: #f7f9fD;
+	--cta: #ffc561;
+	--color1: #c86de0;
+	--color2: #ff6eb3;
+	--color3: #ff9181;
+	--color4: #f9f871;
+	--color5: #e43661;
+
+	/* Typography Colors*/
+	--p-text: #2e2e2e;
+	--h-text: #181818;
+	--btn-text: #181818;
+	--p-text-dark: #fff3ec;
+	--h-text-dark: #fffffe;
+	--btn-text-dark: #fffffe;
+}
+
+/* 
+==========================
+Page Reset
+==========================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    
+    /* Remove this */
+    height: 1000px;
+}
+
+/* 
+==========================
+[Section Name] Section
+==========================
+*/
+
+
+/* 
+=================================
+[Section Name] Web Responsive Media
+=================================
+*/
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+
+}
