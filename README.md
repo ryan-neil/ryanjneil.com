@@ -10,10 +10,10 @@ This is the repo for my personal portfolio.
 
 ## 📂 Repo Folder Structure
 `/assets/` - contains images for the repo display. \
-`/src/` - contains the source files for the Github repo. \
-`/src-dark/` contains the source files for the Github repo. \
-`/src/components/` - contains the theme section components. \
-`/src/js/` - contains all JavaScript component files. \
+`/dist/` - contains the source files for the Github repo. \
+`/dist-dark/` contains the source files for the Github repo. \
+`/dist/components/` - contains the theme section components. \
+`/dist/js/` - contains all JavaScript component files. \
 
 ## 📌 Resources
 - [Material Design - Dark Theme](https://material.io/design/color/dark-theme.html#ui-application)
