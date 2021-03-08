@@ -1,6 +1,5 @@
-# Joseph Skycrest Portfolio
 <p align="center">
-  <img src="/assets/js-logo.svg" width="850" alt="css-hero">
+  <img src="/assets/js-logo.svg" width="600" alt="js-hero">
 </p>
 
 ## Introduction
