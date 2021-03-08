@@ -5,7 +5,7 @@ Colors
 */
 :root {
 	/* Portfolio Colors */
-	--white: #FFFFFF;
+	--white: #ffffff;
 	--light: #f5f5f5;
 	--primary-color: #ffa69e;
 	--cta: #ffc561;
@@ -17,13 +17,23 @@ Colors
 	--cp1-color5: #ffa69e;
 	/* Typography Colors*/
 	--text: #3b4852;
-	--text-light: #636D79;
-	--text-white: #FFF3EC;
-	--border-color: #F4F4F4;
-	--gradient-light: linear-gradient(to right, #FFFFFF, #FFFFFF10);
+	--text-light: #636d79;
+	--text-white: #fff3ec;
+	--border-color: #f4f4f4;
+	--gradient-light: linear-gradient(to right, #ffffff, #FFFFFF10);
 	--gradient1: linear-gradient(to bottom right, #ff9068, #fd746c);
-	--gradient2: linear-gradient(to bottom right, #feac5e, #c779d0, #4bc0c8);
-	--gradient3: linear-gradient(to bottom right, #c6ffdd, #fbd786, #f7797d);
+	--gradient2: linear-gradient(
+		to bottom right,
+		#feac5e,
+		#c779d0,
+		#4bc0c8
+	);
+	--gradient3: linear-gradient(
+		to bottom right,
+		#c6ffdd,
+		#fbd786,
+		#f7797d
+	);
 }
 
 /* 
@@ -95,9 +105,9 @@ Navbar Section
 	transition: 0.1s ease-in;
 	color: var(--text);
 }
-	.nav__logo:hover {
-		opacity: 0.8;
-	}
+.nav__logo:hover {
+	opacity: 0.8;
+}
 .nav__btn {
 	font-family: 'Inter', sans-serif;
 	font-size: 1rem;
@@ -110,10 +120,10 @@ Navbar Section
 	display: flex;
 	align-items: center;
 }
-	.nav__btn:hover svg {
-		transition: all 0.1s ease-in;
-		fill: var(--primary-color);
-	}
+.nav__btn:hover svg {
+	transition: all 0.1s ease-in;
+	fill: var(--primary-color);
+}
 .nav__btn__icon {
 	width: 1.2rem;
 	fill: var(--text);
@@ -173,7 +183,7 @@ Start Hero Section
 }
 .hero-section h1 {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 3.2rem; 	/* 48px */
+	font-size: 3.2rem; /* 48px */
 	font-weight: 400;
 	letter-spacing: .025rem;
 	line-height: 1.25;
@@ -199,19 +209,19 @@ Start Hero Section
 	background: none;
 	border-bottom: 1px solid var(--text);
 }
-	.hero-btn:hover .btn-icon.hero {
-		animation: bounce 0.4s infinite alternate;
-		fill: var(--primary-color);
+.hero-btn:hover .btn-icon.hero {
+	animation: bounce 0.4s infinite alternate;
+	fill: var(--primary-color);
+}
+@keyframes bounce {
+	from {
+		transform: translateX(0px);
 	}
-		@keyframes bounce {
-			from {
-				transform: translateX(0px);
-			}
-			to {
-				transform: translateX(8px);
-			}
-		}
-.hero-btn a{
+	to {
+		transform: translateX(8px);
+	}
+}
+.hero-btn a {
 	text-decoration: none;
 	color: var(--text);
 }
@@ -287,7 +297,7 @@ Projects Section
 }
 .projects__heading h1 {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 3rem; 	/* 48px */
+	font-size: 3rem; /* 48px */
 	font-weight: 400;
 	letter-spacing: .025rem;
 	line-height: 1.25;
@@ -301,11 +311,11 @@ Projects Section
 	padding: 1rem 1rem 0 0;
 	border-radius: .6rem;
 	display: flex;
-	box-shadow: inset 0 2px 4px 0 rgba(0,0,0,.06);
+	box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
 }
 /* Odd projects__card styles */
-.projects__card:nth-of-type(2n+1) {
-  padding: 1rem 0 0 1rem;
+.projects__card:nth-of-type(2n + 1) {
+	padding: 1rem 0 0 1rem;
 }
 .projects__card.project-1 {
 	background-color: var(--cp1-color1);
@@ -366,9 +376,9 @@ Projects Section
 	fill: var(--text);
 	margin-right: 1rem;
 }
-	.projects__icon:hover {
-		opacity: .8;
-	}
+.projects__icon:hover {
+	opacity: .8;
+}
 /* Image column styles */
 .project__content.img.odd {
 	border-top-left-radius: 10px;
@@ -388,15 +398,15 @@ Projects Section
 	width: 31rem;
 	position: absolute;
 	top: 1.6rem;
-  right: 0;
-  bottom: 0;
+	right: 0;
+	bottom: 0;
 }
 .project__img.even {
 	width: 31rem;
 	position: absolute;
 	top: 1.6rem;
-  left: 0;
-  bottom: 0;
+	left: 0;
+	bottom: 0;
 }
 
 /* 
@@ -450,7 +460,7 @@ Contact Section
 }
 .contact-container h1 {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 3rem; 	/* 48px */
+	font-size: 3rem; /* 48px */
 	font-weight: 400;
 	text-align: center;
 	letter-spacing: .025rem;
@@ -458,19 +468,19 @@ Contact Section
 	margin: auto;
 	padding-bottom: 2rem;
 	color: var(--text);
-	
+
 	/* Create the gradient. */
 	background-image: var(--gradient1);
-  /* background-image: var(--gradient2); */
+	/* background-image: var(--gradient2); */
 	/* background-image: var(--gradient3); */
-	
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .contact-container p {
 	font-size: 1.2rem;
@@ -484,11 +494,11 @@ Contact Section
 .contact-container a {
 	color: var(--text);
 	text-decoration: underline;
-  text-decoration-color: var(--text);
+	text-decoration-color: var(--text);
 	transition: 0.1s ease-in-out;
 }
 .contact-container a:hover {
-  text-decoration-color: var(--primary-color);
+	text-decoration-color: var(--primary-color);
 }
 /* .text-underline.contact::after {
 	bottom: 20%;
@@ -602,8 +612,12 @@ About Page
 	position: relative;
 	display: block;
 	overflow: hidden;
-	background-image:
-		linear-gradient(to bottom right, #feac5e, #c779d0, #4bc0c8);
+	background-image: linear-gradient(
+		to bottom right,
+		#feac5e,
+		#c779d0,
+		#4bc0c8
+	);
 	/* background-image:
 		url('https://source.unsplash.com/random'); */
 	background-size: cover;
@@ -649,16 +663,16 @@ About Page
 }
 .item__info a {
 	text-decoration: none;
-	color: var(--text);
 }
 .item__links {
+	color: var(--text);
 	width: auto;
 	margin-bottom: 1rem;
 	display: flex;
 	align-items: center;
 }
-.item__links:hover {
-	opacity: 0.8;
+.item__links p:hover {
+	color: var(--primary-color);
 }
 .about__icon {
 	width: 1.4rem;
