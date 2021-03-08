@@ -1,0 +1,106 @@
+/* 
+=================================
+Fonts
+=================================
+*/
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+/* Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* 
+=================================
+Page Reset
+=================================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1rem; /* 16px */
+  color: var(--p-text);
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+/* 
+=================================
+Colors
+=================================
+*/
+
+:root {
+	/* Primary */
+  --white: #ffffff;
+  --light: #f5f5f5;
+  --dark-light: #242629;
+  --dark-medium: #16161a;
+  --cta: #ffd800;
+	--blue: #0479F1;
+	/* Neon Theme */
+	--neon-dark: #01041E;
+  --neon-teal: #30BDE5;
+	--neon-purple: #A129F2;
+	--neon-pink: #D95CE4;
+  /* Typography Light */
+  --p-text: #2e2e2e;
+  --h-text: #181818;
+	--btn-text: #181818;
+	/* Typography Dark */
+  --p-text-dark: #fff3ec;
+  --h-text-dark: #fffffe;
+	--btn-text-dark: #fffffe;
+	/* Companies */
+	--google-yellow: #F4B400;
+	--google-red: #DB4437;
+	--google-blue: #4285F4;
+	--apple-blue: #0479F1;
+	--fb-blue: #4267B2;
+	--spotify-green: #1DB954;
+	--airbnb-coral: #FF585D;
+	--ferrari-red: #CD212A;
+}
+
+/* 
+=================================
+Typography
+=================================
+*/
+
+h1,
+h2,
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: var(--h-text);
+}
+
+p {
+  line-height: 1.6rem;
+  margin-bottom: 0.85rem;
+}
+
+/* 
+==========================
+Start Code Here
+==========================
+*/
+
+/* 
+=================================
+[Section] Web Responsive Media
+=================================
+*/
+@media screen and (max-width: 51rem) {
+  /* Code goes here */
+}
