@@ -1,0 +1,164 @@
+:root {
+	/* Portfolio Palette */
+	--color-primary-bg: #16161a;
+	--color-secondary-bg: #242629;
+	--color-primary: #7f5af0;
+	--color-secondary: #2cb67d;
+	--color-white: #fffffe;
+	--color-primary-gradient: linear-gradient(
+		135deg,
+		var(--color-primary) 10%,
+		var(--color-secondary) 100%
+	);
+	/* Typography */
+	--color-text-heading: var(--color-white);
+	--color-text-subheading: #94a1b2;
+	--color-text-p: #94a1b2;
+	--font-size-sm: 0.875rem;
+	--font-size-base: 1rem;
+	--font-size-md: 1.0625rem;
+	--font-size-lg: 1.25rem;
+	--font-size-xl: 2rem;
+	--font-size-xxl: 3rem;
+	/* Styles */
+	--color-btn-bg: var(--color-primary);
+	--color-btn-text: var(--color-text-heading);
+	--color-card-bg: var(--color-primary-bg);
+	--color-border: var(--color-white);
+	--color-border-btn: #8f70eb;
+	--color-border-nav: #4e4e4e;
+	--box-shadow-sm: 0px 2px 4px 0px rgba(14, 30, 37, 0.12);
+	--box-shadow-md: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+	--box-shadow-lg: -10px 10px 80px 0px rgba(0, 0, 0, 0.1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
+.text-underline {
+	display: inline-block;
+	position: relative;
+	z-index: 10;
+}
+.text-underline::after {
+	background: var(--color-secondary);
+	bottom: 12%;
+	content: '';
+	height: .6rem;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+.btn {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+	font-size: var(--font-size-base);
+	color: var(--color-btn-text);
+	width: auto;
+	height: auto;
+	padding: .8rem 1rem;
+	background: var(--color-btn-bg);
+	border: 1px solid var(--color-border-btn);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+.btn-icon {
+	width: var(--font-size-md);
+	fill: var(--color-white);
+	margin-left: .6rem;
+}
+
+/* 
+==========================
+Contact Section
+==========================
+*/
+.contact-section {
+	padding: 8rem 1rem;
+	background-color: var(--color-primary-bg);
+}
+.contact-container h1 {
+	font-size: var(--font-size-xxl);
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: .025rem;
+	line-height: 1.25;
+	margin: auto;
+	padding-bottom: 2rem;
+	color: var(--color-text-heading);
+
+	/* Text Gradient */
+	/* Create the gradient. */
+	background-image: var(--color-primary-gradient);
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.contact-container p {
+	font-size: var(--font-size-lg);
+	text-align: center;
+	line-height: 1.25;
+	color: var(--color-text-heading);
+	width: 40%;
+	margin: auto;
+}
+.contact-container a {
+	color: var(--color-text-heading);
+	text-decoration: underline;
+	text-decoration-color: var(--color-text-heading);
+	transition: 0.1s ease-in-out;
+}
+.text-underline.contact::after {
+	bottom: 15%;
+	height: .3rem;
+}
+.text-underline.contact:hover::after {
+	bottom: 15%;
+	height: .9rem;
+	transition: all .2s ease-in-out;
+}
+/* 
+=================================
+[Contact] Responsive Media
+=================================
+*/
+@media (min-width: 42.667em) and (max-width: 62em) {
+	.contact-section {
+		padding: 4rem 1rem;
+	}
+	.contact-container h1 {
+		width: 80%;
+	}
+	.contact-container p {
+		width: 75%;
+	}
+}
+@media (max-width: 42.611em) {
+	.contact-section {
+		padding: 4rem 1rem;
+	}
+	.contact-container h1 {
+		font-size: var(--font-size-xl);
+		width: 100%;
+	}
+	.contact-container p {
+		font-size: var(--font-size-lg);
+		width: 100%;
+	}
+}
