@@ -49,10 +49,16 @@ html {
 	font-weight: 400;
 	scroll-behavior: smooth;
 }
+body {
+	overflow-x: hidden;
+}
 h1,
 h2,
 h3 {
 	font-weight: 500;
+}
+p {
+	line-height: 1.6;
 }
 a {
 	text-decoration: none;
@@ -110,6 +116,34 @@ a {
 
 /* 
 ==========================
+Fader Styles 
+*/
+.fade-in {
+	opacity: 0;
+	transition: opacity 200ms ease-in;
+}
+.fade-in.appear {
+	opacity: 1;
+}
+.from-left {
+	transform: translate(-50%);
+}
+.from-right {
+	transform: translate(50%);
+}
+.from-left,
+.from-right {
+	transition: opacity 200ms ease-in, transform 400ms ease-in;
+	opacity: 0;
+}
+.from-left.appear,
+.from-right.appear {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+/* 
+==========================
 Navbar Section
 ==========================
 */
@@ -162,6 +196,18 @@ Navbar Section
 	/* color: var(--color-text-primary); */
 }
 /* End styles after scrolling */
+
+/* 
+=================================
+[Navbar] Web Responsive Media
+=================================
+*/
+/** For mobile devices **/
+@media (max-width: 42.611em) {
+	.navbar {
+		position: absolute;
+	}
+}
 
 /* 
 ==========================
@@ -286,6 +332,9 @@ Projects Section
 .projects__card:nth-of-type(2n + 1) {
 	padding: 1rem 0 0 1rem;
 }
+.projects__card:nth-of-type(2n) {
+	padding: 1rem 0 0 1rem;
+}
 .projects__card.project-1 {
 	background-color: var(--color-primary-bg);
 }
@@ -301,13 +350,13 @@ Projects Section
 }
 /* Text column styles */
 .project__content.text {
-	padding: 3rem;
+	padding: 2rem 2.8rem;
 }
 .project__content h1 {
 	font-size: var(--font-size-lg);
 	font-weight: 500;
 	color: var(--color-text-heading);
-	padding: 1rem 0;
+	padding: 1.2rem 0;
 }
 .project__content p {
 	font-size: var(--font-size-md);
@@ -545,6 +594,7 @@ Footer Section
 */
 @media (max-width: 42.611em) {
 	.footer-container {
+		padding: 4rem 1rem;
 		flex-direction: column-reverse;
 		justify-content: space-between;
 		align-items: center;
