@@ -1,6 +1,5 @@
 // Start Button Dark and Light Mode
 // users' last choice will be remembered
-
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
@@ -31,14 +30,10 @@ darkModeToggle.addEventListener("click", () => {
 	darkMode = localStorage.getItem("darkMode");
 	if (darkMode !== "enabled") {
 		enableDarkMode();
-		console.log(darkMode);
 	} else {
 		disableDarkMode();
-		console.log(darkMode);
 	}
 });
-
-// End Button Dark and Light Mode
 
 // Start Navbar transition on scroll
 window.addEventListener("scroll", function() {
@@ -56,7 +51,7 @@ const sliders = document.querySelectorAll(".slide-in");
 // faders
 const appearOptions = {
 	threshold  : 0,
-	rootMargin : "0px 0px -100px 0px"
+	rootMargin : "0px 0px 52px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver(function(

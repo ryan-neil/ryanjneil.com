@@ -3,8 +3,8 @@
 	--color-primary-bg: #fffffe;
 	--color-secondary-bg: #eff0f3;
 	--color-primary: #8b4ed7;
-	--color-primary-light: #dac9fd;
-	--color-secondary: #2cb67d;
+	--color-primary-light: #e2d5fd;
+	--color-secondary: #3cbabb;
 	--color-white: #fffffe;
 	--color-black: #0d0d0d;
 	--color-primary-gradient: linear-gradient(
@@ -30,7 +30,7 @@
 	--transition: 0.2s ease-in-out;
 	--color-btn-bg: var(--color-primary);
 	--color-btn-text: var(--color-white);
-	--color-btn-border: #9577ec;
+	--color-btn-border: #9b6cd4;
 	--color-card-bg: var(--color-primary-bg);
 	--color-border-nav: #ccd4da;
 	--color-border: #2a2a2a;
@@ -38,6 +38,8 @@
 	--box-shadow-sm: 0px 2px 4px 0px rgba(14, 30, 37, 0.12);
 	--box-shadow-md: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
 	--box-shadow-lg: -10px 10px 80px 0px rgba(0, 0, 0, 0.1);
+	--color-sun: #ffdf39;
+	--color-moon: #8b4ed7;
 }
 /* Dark Mode */
 .darkmode {
@@ -90,6 +92,11 @@ a {
 	width: 100%;
 	z-index: -1;
 }
+@media (max-width: 42.611em) {
+	.text-underline.hero::after {
+		height: 6px;
+	}
+}
 .btn {
 	font-weight: 500;
 	font-size: var(--font-size-base);
@@ -129,13 +136,12 @@ a {
 */
 .dark-mode-toggle {
 	fill: var(--color-text-heading);
-	border: 2px solid var(--color-text-heading);
-	padding: 4px;
 	background: transparent;
 	cursor: pointer;
-	border-radius: 5px;
 	width: 1.8rem;
 	height: 1.8rem;
+	padding: 4px;
+	border: none;
 }
 
 /* 
@@ -144,24 +150,19 @@ a {
 */
 .fade-in {
 	opacity: 0;
-	transition: opacity 250ms ease-in;
+	transition: opacity 400ms ease-in;
 }
 .fade-in.appear {
 	opacity: 1;
 }
-.from-left {
-	transform: translate(-50%);
+.from-bottom {
+	transform: translateY(50%);
 }
-.from-right {
-	transform: translate(50%);
-}
-.from-left,
-.from-right {
-	transition: opacity 250ms ease-in, transform 400ms ease-in;
+.from-bottom {
+	transition: opacity 400ms ease-in, transform 500ms ease-in;
 	opacity: 0;
 }
-.from-left.appear,
-.from-right.appear {
+.from-bottom.appear {
 	transform: translateX(0);
 	opacity: 1;
 }
@@ -314,9 +315,6 @@ Hero Section
 	.hero-section h1 {
 		font-size: var(--font-size-xl);
 	}
-	.text-underline::after {
-		height: 6px;
-	}
 	.hero-section h3 {
 		font-size: var(--font-size-md);
 		width: 100%;
@@ -411,12 +409,12 @@ Projects Section
 	display: inline-block;
 }
 .projects__icon {
-	width: 1.4rem;
+	width: 1.6rem;
 	fill: var(--color-text-subheading);
 	margin-right: 1rem;
 }
 .projects__icon:hover {
-	fill: var(--color-primary);
+	fill: var(--color-secondary);
 	transition: var(--transition);
 }
 /* Image column styles */
@@ -456,12 +454,9 @@ Projects Section
 [Projects] Responsive Media
 =================================
 */
-@media (max-width: 48.889em) {
+@media (max-width: 42.611em) {
 	.projects__heading h1 {
 		font-size: var(--font-size-xl);
-	}
-	.text-underline::after {
-		height: 6px;
 	}
 	.projects__card {
 		flex-direction: column;
@@ -541,14 +536,18 @@ Contact Section
 	text-decoration: underline;
 	text-decoration-color: var(--color-text-heading);
 	transition: var(--transition);
+	font-weight: 500;
+}
+.contact-container a:hover {
+	color: var(--color-text-heading);
 }
 .text-underline.contact::after {
-	bottom: 15%;
-	height: .3rem;
+	bottom: 5%;
+	height: .1rem;
 }
 .text-underline.contact:hover::after {
 	bottom: 15%;
-	height: .9rem;
+	height: 1.2rem;
 	transition: var(--transition);
 }
 /* 
@@ -723,7 +722,7 @@ About Page
 =================================
 /*
 /** For mobile devices **/
-@media (max-width: 767px) {
+@media (max-width: 42.611em) {
 	.about-hero_image {
 		height: 40vh;
 		margin-top: 8rem;
