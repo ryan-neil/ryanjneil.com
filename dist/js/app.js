@@ -1,4 +1,8 @@
-// Start Button Dark and Light Mode
+/**
+	==========================================
+ 		Dark Mode
+ */
+
 // users' last choice will be remembered
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
@@ -7,6 +11,7 @@ const darkModeToggle = document.querySelector("#dark-mode-toggle");
 // if it's enabled, turn it off
 // if it's disabled, turn it on
 
+// enable function
 const enableDarkMode = () => {
 	// 1. add the class of darkMode to the body
 	document.body.classList.add("darkmode");
@@ -14,6 +19,7 @@ const enableDarkMode = () => {
 	localStorage.setItem("darkMode", "enabled");
 };
 
+// disable function
 const disableDarkMode = () => {
 	// 1. remove the class of darkMode from the body
 	document.body.classList.remove("darkmode");
@@ -25,6 +31,7 @@ if (darkMode === "enabled") {
 	enableDarkMode();
 }
 
+// event toggle
 darkModeToggle.addEventListener("click", () => {
 	// update darkMode every time someone clicks on the button
 	darkMode = localStorage.getItem("darkMode");
@@ -35,16 +42,23 @@ darkModeToggle.addEventListener("click", () => {
 	}
 });
 
-// Start Navbar transition on scroll
+/**
+	==========================================
+ 		Navbar transition on scroll
+ */
+
 window.addEventListener("scroll", function() {
 	let header = document.querySelector("header");
 	let windowPosition = window.scrollY > 75;
 
 	header.classList.toggle("scrolling-active", windowPosition);
 });
-// End Navbar transition on scroll
 
-// Start Site Faders
+/**
+ 	==========================================
+ 		Site Faders
+ */
+
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
 
@@ -76,4 +90,3 @@ faders.forEach((fader) => {
 sliders.forEach((slider) => {
 	appearOnScroll.observe(slider);
 });
-// End Site Faders

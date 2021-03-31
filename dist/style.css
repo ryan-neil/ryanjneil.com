@@ -35,11 +35,12 @@
 	--color-border-nav: #ccd4da;
 	--color-border: #2a2a2a;
 	--color-border-btn: var(--color-primary-light);
-	--box-shadow-sm: 0px 2px 4px 0px rgba(14, 30, 37, 0.12);
-	--box-shadow-md: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
-	--box-shadow-lg: -10px 10px 80px 0px rgba(0, 0, 0, 0.1);
-	--color-sun: #ffdf39;
-	--color-moon: #8b4ed7;
+	--box-shadow-sm: 0px 0px 2px -1px rgba(0, 0, 0, .8),
+		0px 2px 9px -5px rgba(0, 0, 0, .8);
+	--box-shadow-md: 0px 0px 2px -1px rgba(0, 0, 0, 1),
+		0px 4px 12px -5px rgba(0, 0, 0, 1);
+	--box-shadow-lg: 0px 0px 2px -1px rgba(0, 0, 0, 1),
+		0px 6px 14px -5px rgba(0, 0, 0, 1);
 }
 /* Dark Mode */
 .darkmode {
@@ -111,6 +112,7 @@ a {
 }
 .btn:hover {
 	opacity: .9;
+	box-shadow: none;
 }
 .btn-icon {
 	width: var(--font-size-md);
@@ -341,7 +343,7 @@ Projects Section
 .projects__heading {
 	padding-bottom: 1rem;
 }
-.projects__heading h1 {
+.projects__heading h2 {
 	font-size: var(--font-size-xxl);
 	font-weight: 500;
 	color: var(--color-text-heading);
@@ -357,7 +359,7 @@ Projects Section
 	border: 1px solid var(--color-border-card);
 	border-radius: .6rem;
 	display: flex;
-	box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, .05);
+	box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, .1);
 }
 /* Odd projects__card styles */
 .projects__card:nth-of-type(2n + 1) {
@@ -380,7 +382,7 @@ Projects Section
 .project__content.text {
 	padding: 2rem 2.8rem;
 }
-.project__content h1 {
+.project__content h3 {
 	font-size: var(--font-size-lg);
 	font-weight: 500;
 	color: var(--color-text-heading);
@@ -455,7 +457,7 @@ Projects Section
 =================================
 */
 @media (max-width: 42.611em) {
-	.projects__heading h1 {
+	.projects__heading h2 {
 		font-size: var(--font-size-xl);
 	}
 	.projects__card {
@@ -502,7 +504,7 @@ Contact Section
 	padding: 8rem 1rem;
 	background-color: var(--color-primary-bg);
 }
-.contact-container h1 {
+.contact-container h2 {
 	font-size: var(--font-size-xxl);
 	font-weight: 600;
 	text-align: center;
@@ -559,7 +561,7 @@ Contact Section
 	.contact-section {
 		padding: 4rem 1rem;
 	}
-	.contact-container h1 {
+	.contact-container h2 {
 		width: 80%;
 	}
 	.contact-container p {
@@ -570,7 +572,7 @@ Contact Section
 	.contact-section {
 		padding: 4rem 1rem;
 	}
-	.contact-container h1 {
+	.contact-container h2 {
 		font-size: var(--font-size-xl);
 		width: 100%;
 	}
@@ -655,6 +657,7 @@ About Page
 	position: relative;
 	display: block;
 	overflow: hidden;
+	box-shadow: var(--box-shadow-sm);
 	background-image: var(--color-primary-gradient);
 	/* background-image:
 		url('https://source.unsplash.com/random'); */
@@ -678,7 +681,7 @@ About Page
 .item__heading {
 	flex: 1;
 }
-.item__heading h2 {
+.item__heading h3 {
 	font-size: var(--font-size-lg);
 	color: var(--color-text-heading);
 }
@@ -734,7 +737,7 @@ About Page
 	.item__info {
 		padding-top: 1.6rem;
 	}
-	.item__heading h2 {
+	.item__heading h3 {
 		font-size: var(--font-size-base);
 	}
 	.item__info p {
