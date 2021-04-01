@@ -16,7 +16,7 @@
 	--color-text-heading: #3f4347;
 	--color-text-subheading: #545a5f;
 	--color-text-p: #676e74;
-	--color-link: #3a9bfc;
+	--color-link: #2090ff;
 	--font-size-xsm: 0.750rem;
 	--font-size-sm: 0.875rem;
 	--font-size-base: 1rem;
@@ -681,6 +681,10 @@ About Page
 .item__heading {
 	flex: 1;
 }
+.item__heading h1 {
+	font-size: var(--font-size-lg);
+	color: var(--color-text-heading);
+}
 .item__heading h3 {
 	font-size: var(--font-size-lg);
 	color: var(--color-text-heading);
@@ -736,6 +740,9 @@ About Page
 	}
 	.item__info {
 		padding-top: 1.6rem;
+	}
+	.item__heading h1 {
+		font-size: var(--font-size-base);
 	}
 	.item__heading h3 {
 		font-size: var(--font-size-base);
