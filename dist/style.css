@@ -288,6 +288,7 @@ Hero Section
 	fill: var(--color-secondary);
 }
 .btn.hero {
+	font-family: 'Quicksand', sans-serif;
 	margin-top: 2rem;
 	display: flex;
 	justify-content: center;
