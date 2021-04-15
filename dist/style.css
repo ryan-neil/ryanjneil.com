@@ -2,9 +2,9 @@
 	/* Portfolio Palette */
 	--color-primary-bg: #fffffe;
 	--color-secondary-bg: #eff0f3;
-	--color-primary: #8b4ed7;
-	--color-primary-light: #e2d5fd;
-	--color-secondary: #3cbabb;
+	--color-primary: #6464fb;
+	--color-primary-light: #d8d8fe;
+	--color-secondary: #fb9797;
 	--color-white: #fffffe;
 	--color-black: #0d0d0d;
 	--color-primary-gradient: linear-gradient(
@@ -30,7 +30,7 @@
 	--transition: 0.2s ease-in-out;
 	--color-btn-bg: var(--color-primary);
 	--color-btn-text: var(--color-white);
-	--color-btn-border: #9b6cd4;
+	--color-btn-border: #7c7cfb;
 	--color-card-bg: var(--color-primary-bg);
 	--color-border-nav: #ccd4da;
 	--color-border: #2a2a2a;
@@ -46,6 +46,7 @@
 .darkmode {
 	--color-primary-bg: #21272f;
 	--color-secondary-bg: #2c333c;
+	--color-secondary: #fb7e7e;
 	--color-border-nav: #434a53;
 	--color-border: #fffffe;
 	/* Typography */
@@ -222,12 +223,6 @@ Navbar Section
 .scrolling-active .navbar {
 	background-color: var(--color-primary-bg);
 }
-.scrolling-active .navbar a.logo {
-	/* color: var(--color-text-primary); */
-}
-.scrolling-active .navbar a {
-	/* color: var(--color-text-primary); */
-}
 /* End styles after scrolling */
 
 /* 
@@ -278,6 +273,19 @@ Hero Section
 	font-weight: 500;
 	color: var(--color-text-heading);
 	line-height: var(--text-lineHeight-md);
+}
+.hero-links-wrapper {
+	margin-top: 1.4rem;
+	display: flex;
+	gap: 1.2rem;
+}
+.hero__links svg {
+	width: 1.4rem;
+	fill: var(--color-text-heading);
+	transition: var(--transition);
+}
+.hero__links svg:hover {
+	fill: var(--color-secondary);
 }
 .btn.hero {
 	margin-top: 2rem;
@@ -659,8 +667,7 @@ About Page
 	overflow: hidden;
 	box-shadow: var(--box-shadow-sm);
 	background-image: var(--color-primary-gradient);
-	/* background-image:
-		url('https://source.unsplash.com/random'); */
+	/* background-image: url('https://source.unsplash.com/random'); */
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -712,15 +719,15 @@ About Page
 	align-items: center;
 }
 .p-link {
-	color: var(--color-link) !important;
-}
-.item__links:hover {
-	opacity: 0.8;
+	color: var(--color-text-subheading) !important;
 }
 .item__links-icon {
 	width: var(--font-size-md);
-	fill: var(--color-link);
+	fill: var(--color-text-subheading);
 	margin-right: 0.75rem;
+}
+.item__links:hover {
+	opacity: .8;
 }
 
 /* 
