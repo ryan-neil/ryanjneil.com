@@ -50,9 +50,9 @@
 	--color-border-nav: #434a53;
 	--color-border: #fffffe;
 	/* Typography */
-	--color-text-heading: #cad9e6;
-	--color-text-subheading: #95a3af;
-	--color-text-p: #95a3af;
+	--color-text-heading: #f3f3f3;
+	--color-text-subheading: #bfbfbf;
+	--color-text-p: #bfbfbf;
 }
 
 * {
@@ -84,7 +84,7 @@ a {
 	position: relative;
 	z-index: 10;
 }
-.text-underline::after {
+.text-underline.lg::after {
 	background: var(--color-secondary);
 	bottom: 12%;
 	content: '';
@@ -94,8 +94,18 @@ a {
 	width: 100%;
 	z-index: -1;
 }
+.text-underline.sm::after {
+	background: var(--color-secondary);
+	bottom: 5%;
+	content: '';
+	height: .15rem;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
 @media (max-width: 42.611em) {
-	.text-underline.hero::after {
+	.text-underline.lg::after {
 		height: 6px;
 	}
 }
@@ -275,21 +285,20 @@ Hero Section
 	line-height: var(--text-lineHeight-md);
 }
 .hero-links-wrapper {
-	margin-top: 1.4rem;
+	margin: 1.4rem 0;
 	display: flex;
 	gap: 1.2rem;
 }
 .hero__links svg {
 	width: 1.4rem;
-	fill: var(--color-text-heading);
+	fill: var(--color-text-subheading);
 	transition: var(--transition);
 }
 .hero__links svg:hover {
-	fill: var(--color-secondary);
+	fill: var(--color-text-heading);
 }
 .btn.hero {
 	font-family: 'Quicksand', sans-serif;
-	margin-top: 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -425,7 +434,7 @@ Projects Section
 	margin-right: 1rem;
 }
 .projects__icon:hover {
-	fill: var(--color-secondary);
+	fill: var(--color-text-heading);
 	transition: var(--transition);
 }
 /* Image column styles */
@@ -552,11 +561,7 @@ Contact Section
 .contact-container a:hover {
 	color: var(--color-text-heading);
 }
-.text-underline.contact::after {
-	bottom: 5%;
-	height: .1rem;
-}
-.text-underline.contact:hover::after {
+.text-underline.sm.contact:hover::after {
 	bottom: 15%;
 	height: 1.2rem;
 	transition: var(--transition);
