@@ -285,12 +285,12 @@ Hero Section
 .hero-links-wrapper {
 	margin: 1.4rem 0;
 	display: flex;
-	gap: 1.2rem;
 }
 .hero__links svg {
 	width: 1.4rem;
 	fill: var(--color-text-subheading);
 	transition: var(--transition);
+	margin-right: 1rem;
 }
 .hero__links svg:hover {
 	fill: var(--color-text-heading);
