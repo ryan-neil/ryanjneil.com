@@ -20,7 +20,7 @@
 	--font-size-xsm: 0.750rem;
 	--font-size-sm: 0.875rem;
 	--font-size-base: 1rem;
-	--font-size-md: 1.0625rem;
+	--font-size-md: 1.0825rem;
 	--font-size-lg: 1.25rem;
 	--font-size-xl: 2rem;
 	--font-size-xxl: 3rem;
@@ -324,9 +324,6 @@ Hero Section
 */
 /** For mobile devices **/
 @media (max-width: 42.611em) {
-	.hero-section {
-		height: 90vh;
-	}
 	.hero-col {
 		width: 100%;
 	}
@@ -584,11 +581,12 @@ Contact Section
 		padding: 4rem 1rem;
 	}
 	.contact-container h2 {
-		font-size: var(--font-size-xl);
+		--font-size-lg: 1.5rem;
+		font-size: var(--font-size-lg);
 		width: 100%;
 	}
 	.contact-container p {
-		font-size: var(--font-size-lg);
+		font-size: var(--font-size-md);
 		width: 100%;
 	}
 }
