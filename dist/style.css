@@ -399,12 +399,13 @@ Projects Section
 	font-size: var(--font-size-lg);
 	font-weight: 500;
 	color: var(--color-text-heading);
-	padding: 1.2rem 0;
+	margin-top: 1.2rem;
+
+	/* outline: 1px solid red; */
 }
 .project__content p {
 	font-size: var(--font-size-md);
 	color: var(--color-text-p);
-	padding-bottom: 1rem;
 }
 .project__content h3 {
 	font-size: var(--font-size-md);
@@ -426,6 +427,7 @@ Projects Section
 .projects__icon {
 	width: 1.6rem;
 	fill: var(--color-text-subheading);
+	margin-top: 1.2rem;
 	margin-right: 1rem;
 }
 .projects__icon:hover {
