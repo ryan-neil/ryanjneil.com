@@ -3,7 +3,7 @@
 </p>
 
 ## Introduction
-This is the repo for my personal portfolio. The portfolio was built with plain HTML, CSS and JavaScripts. No libraries.
+This is the repo for my personal portfolio. The portfolio was built with plain HTML, CSS and JavaScripts. Deployed on [Netlify](https://www.netlify.com/).
 
 [View the live site >>](https://www.josephskycrest.com/)
 
@@ -38,23 +38,32 @@ This is the repo for my personal portfolio. The portfolio was built with plain H
 ## 🎨 Color Palette
 ### ⚪ Light Mode:
 ```css
---color-primary-bg: #16161a;
---color-secondary-bg: #242629;
---color-main: #fffffe;
---color-highlight: #7f5af0;
---color-secondary: #72757e;
---color-tertiary: #2cb67d;
---color-primary-gradient: linear-gradient(135deg, var(--color-highlight) 10%, var(--color-tertiary) 100%);
+--color-primary: #6464fb;
+--color-primary-light: #d8d8fe;
+--color-secondary: #fb9797;
+--color-primary-bg: #fffffe;
+--color-secondary-bg: #f0f1f4;
+--color-primary-gradient: linear-gradient(
+		135deg,
+		var(--color-primary) 10%,
+		var(--color-secondary) 100%
+	);
+/* Typography */
+--color-text-heading: #3f4347;
+--color-text-subheading: #545a5f;
+--color-text-p: #676e74;
 ```
 ### ⚫ Dark Mode:
 ```css
---color-primary-bg: #16161a;
---color-secondary-bg: #242629;
---color-main: #fffffe;
---color-highlight: #7f5af0;
---color-secondary: #72757e;
---color-tertiary: #2cb67d;
---color-primary-gradient: linear-gradient(135deg, var(--color-highlight) 10%, var(--color-tertiary) 100%);
+--color-primary-bg: #21272f;
+--color-secondary-bg: #2c333c;
+--color-secondary: #fb7e7e;
+--color-border-nav: #434a53;
+--color-border: #fffffe;
+/* Typography */
+--color-text-heading: #f3f3f3;
+--color-text-subheading: #bfbfbf;
+--color-text-p: #bfbfbf;
 ```
 
 ## 📝 Font

@@ -1,8 +1,9 @@
 :root {
 	/* Portfolio Palette */
 	--color-primary-bg: #fffffe;
-	--color-secondary-bg: #eff0f3;
+	--color-secondary-bg: #f0f1f4;
 	--color-primary: #6464fb;
+	/* --color-primary: #5553FF; */ /* 2nd primary choice */
 	--color-primary-light: #d8d8fe;
 	--color-secondary: #fb9797;
 	--color-white: #fffffe;
@@ -16,7 +17,6 @@
 	--color-text-heading: #3f4347;
 	--color-text-subheading: #545a5f;
 	--color-text-p: #676e74;
-	--color-link: #2090ff;
 	--font-size-xsm: 0.750rem;
 	--font-size-sm: 0.875rem;
 	--font-size-base: 1rem;
