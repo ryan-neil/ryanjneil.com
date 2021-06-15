@@ -168,15 +168,6 @@ a {
 .fade-in.appear {
 	opacity: 1;
 }
-.from-bottom {
-	opacity: 0;
-	transform: translateY(30%);
-	transition: opacity 600ms ease-in, transform 600ms ease-in;
-}
-.from-bottom.appear {
-	opacity: 1;
-	transform: translateX(0);
-}
 
 /* 
 ==========================
