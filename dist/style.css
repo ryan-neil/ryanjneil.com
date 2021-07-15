@@ -662,7 +662,6 @@ About Page
 	overflow: hidden;
 	box-shadow: var(--box-shadow-sm);
 
-	/* background-image: var(--color-primary-gradient); */
 	background-image: var(--aboutHeroImage);
 	background-size: cover;
 	background-repeat: no-repeat;
