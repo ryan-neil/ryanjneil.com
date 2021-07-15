@@ -13,6 +13,8 @@
 		var(--color-primary) 10%,
 		var(--color-secondary) 100%
 	);
+	/* Images */
+	--aboutHeroImage: url('images/desert-day.svg');
 	/* Typography */
 	--color-text-heading: #3f4347;
 	--color-text-subheading: #545a5f;
@@ -35,12 +37,9 @@
 	--color-border-nav: #ccd4da;
 	--color-border: #2a2a2a;
 	--color-border-btn: var(--color-primary-light);
-	--box-shadow-sm: 0px 0px 2px -1px rgba(0, 0, 0, .8),
-		0px 2px 9px -5px rgba(0, 0, 0, .8);
-	--box-shadow-md: 0px 0px 2px -1px rgba(0, 0, 0, 1),
-		0px 4px 12px -5px rgba(0, 0, 0, 1);
-	--box-shadow-lg: 0px 0px 2px -1px rgba(0, 0, 0, 1),
-		0px 6px 14px -5px rgba(0, 0, 0, 1);
+	--box-shadow-sm: 0px 0px 2px -1px rgba(0, 0, 0, .8), 0px 2px 9px -5px rgba(0, 0, 0, .8);
+	--box-shadow-md: 0px 0px 2px -1px rgba(0, 0, 0, 1), 0px 4px 12px -5px rgba(0, 0, 0, 1);
+	--box-shadow-lg: 0px 0px 2px -1px rgba(0, 0, 0, 1), 0px 6px 14px -5px rgba(0, 0, 0, 1);
 }
 /* Dark Mode */
 .darkmode {
@@ -49,6 +48,8 @@
 	--color-secondary: #fb7e7e;
 	--color-border-nav: #434a53;
 	--color-border: #fffffe;
+	/* Images */
+	--aboutHeroImage: url('images/desert-night.svg');
 	/* Typography */
 	--color-text-heading: #f3f3f3;
 	--color-text-subheading: #bfbfbf;
@@ -113,7 +114,7 @@ a {
 	font-weight: 500;
 	font-size: var(--font-size-base);
 	color: var(--color-white);
-	padding: .8rem 1rem;
+	padding: .6rem 1rem;
 	background: var(--color-btn-bg);
 	border: 1px solid var(--color-btn-border);
 	border-radius: 5px;
@@ -651,17 +652,18 @@ About Page
 	margin: auto;
 }
 .about-hero_image {
-	height: 50vh;
+	height: 65vh;
 	width: 100%;
-	margin-top: 10rem;
+	margin-top: 8rem;
 	margin-bottom: 5rem;
 	border-radius: .5rem;
 	position: relative;
 	display: block;
 	overflow: hidden;
 	box-shadow: var(--box-shadow-sm);
-	background-image: var(--color-primary-gradient);
-	/* background-image: url('https://source.unsplash.com/random'); */
+
+	/* background-image: var(--color-primary-gradient); */
+	background-image: var(--aboutHeroImage);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
