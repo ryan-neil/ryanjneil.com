@@ -15,7 +15,7 @@
 	--color-primary-gradient: linear-gradient(135deg, var(--color-primary) 10%, var(--color-secondary) 100%);
 	/* Images */
 	--projectImageGoSurf: url('images/gosurf-screenshot-forecast_light.png');
-	--projectImageCodeSnap: url('images/mac-browser-codesnap.png');
+	--projectImageCodeSnap: url('images/codesnap-screenshot_light.png');
 	--projectImageSFPA: url('images/mac-browser-sfpa.png');
 	--projectImageCGPA: url('images/mac-browser-cgpa.png');
 	--aboutHeroImage: url('images/desert-day.svg');
@@ -59,7 +59,7 @@
 	--color-border: #fffffe;
 	/* Images */
 	--projectImageGoSurf: url('images/gosurf-screenshot-forecast_dark.png');
-	--projectImageCodeSnap: url('images/mac-browser-codesnap.png');
+	--projectImageCodeSnap: url('images/codesnap-screenshot_dark.png');
 	--projectImageSFPA: url('images/mac-browser-sfpa.png');
 	--projectImageCGPA: url('images/mac-browser-cgpa.png');
 	--aboutHeroImage: url('images/desert-night.svg');
@@ -100,41 +100,6 @@ a {
 
 /* 
 =================================
-[Text underline]
-*/
-.text-underline {
-	display: inline-block;
-	position: relative;
-	z-index: 10;
-}
-.text-underline.lg::after {
-	background: var(--color-secondary);
-	bottom: 12%;
-	content: '';
-	height: .6rem;
-	position: absolute;
-	left: 0;
-	width: 100%;
-	z-index: -1;
-}
-.text-underline.sm::after {
-	background: var(--color-secondary);
-	bottom: 5%;
-	content: '';
-	height: .15rem;
-	position: absolute;
-	left: 0;
-	width: 100%;
-	z-index: -1;
-}
-@media (max-width: 42.611em) {
-	.text-underline.lg::after {
-		height: 6px;
-	}
-}
-
-/* 
-=================================
 [Buttons]
 */
 .btn {
@@ -170,6 +135,41 @@ a {
 	padding: .25rem .75rem;
 	border: none;
 	border-radius: 0.3rem;
+}
+
+/* 
+=================================
+[Text underline]
+*/
+.text-underline {
+	display: inline-block;
+	position: relative;
+	z-index: 10;
+}
+.text-underline.lg::after {
+	background: var(--color-secondary);
+	bottom: 12%;
+	content: '';
+	height: .6rem;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+.text-underline.sm::after {
+	background: var(--color-secondary);
+	bottom: 5%;
+	content: '';
+	height: .15rem;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+@media (max-width: 42.611em) {
+	.text-underline.lg::after {
+		height: 6px;
+	}
 }
 
 /* 
