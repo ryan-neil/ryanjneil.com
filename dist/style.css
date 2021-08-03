@@ -520,8 +520,8 @@ About Page
 	overflow: hidden;
 	box-shadow: var(--box-shadow-sm);
 
-	/* background-image: var(--aboutHeroImage); */
-	background-image: var(--aboutHeroGradient);
+	background-image: var(--aboutHeroImage);
+	/* background-image: var(--aboutHeroGradient); */
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
