@@ -15,16 +15,18 @@
 	--color-black: #0d0d0d;
 	--color-primary-gradient: linear-gradient(135deg, var(--color-primary) 10%, var(--color-secondary) 100%);
 	/* Images */
-	--projectImageGoSurf: url('/dist/images/gosurf-screenshot-forecast_light.png');
-	--projectImageCodeSnap: url('/dist/images/codesnap-screenshot_light.png');
-	--projectImageSFPA: url('/dist/images/mac-browser-sfpa.png');
-	--projectImageCGPA: url('/dist/images/mac-browser-cgpa.png');
-	--aboutHeroImage: url('/dist/images/desert-day.svg');
-	/* --projectImageGoSurf: url('../images/gosurf-screenshot-forecast_light.png');
+	/* Production */
+	--projectImageGoSurf: url('../images/gosurf-screenshot-forecast_light.png');
 	--projectImageCodeSnap: url('../images/codesnap-screenshot_light.png');
 	--projectImageSFPA: url('../images/mac-browser-sfpa.png');
 	--projectImageCGPA: url('../images/mac-browser-cgpa.png');
-	--aboutHeroImage: url('../images/desert-day.svg'); */
+	--aboutHeroImage: url('../images/desert-day.svg');
+	/* Testing */
+	/* --projectImageGoSurf: url('/dist/images/gosurf-screenshot-forecast_light.png');
+	--projectImageCodeSnap: url('/dist/images/codesnap-screenshot_light.png');
+	--projectImageSFPA: url('/dist/images/mac-browser-sfpa.png');
+	--projectImageCGPA: url('/dist/images/mac-browser-cgpa.png');
+	--aboutHeroImage: url('/dist/images/desert-day.svg'); */
 	--aboutHeroGradient: linear-gradient(135deg, var(--color-primary) 10%, var(--color-secondary) 100%);
 	/* Typography */
 	--color-text-heading: #3f4347;
@@ -65,16 +67,18 @@
 	--color-border-nav: #434a53;
 	--color-border: #fffffe;
 	/* Images */
-	/* --projectImageGoSurf: url('../images/gosurf-screenshot-forecast_dark.png');
+	/* Production */
+	--projectImageGoSurf: url('../images/gosurf-screenshot-forecast_dark.png');
 	--projectImageCodeSnap: url('../images/codesnap-screenshot_dark.png');
 	--projectImageSFPA: url('../images/mac-browser-sfpa.png');
 	--projectImageCGPA: url('../images/mac-browser-cgpa.png');
-	--aboutHeroImage: url('../images/desert-night.svg'); */
-	--projectImageGoSurf: url('/dist/images/gosurf-screenshot-forecast_dark.png');
+	--aboutHeroImage: url('../images/desert-night.svg');
+	/* Testing */
+	/* --projectImageGoSurf: url('/dist/images/gosurf-screenshot-forecast_dark.png');
 	--projectImageCodeSnap: url('/dist/images/codesnap-screenshot_dark.png');
 	--projectImageSFPA: url('/dist/images/mac-browser-sfpa.png');
 	--projectImageCGPA: url('/dist/images/mac-browser-cgpa.png');
-	--aboutHeroImage: url('/dist/images/desert-night.svg');
+	--aboutHeroImage: url('/dist/images/desert-night.svg'); */
 	/* Typography */
 	--color-text-heading: #f3f3f3;
 	--color-text-subheading: #bfbfbf;
