@@ -598,6 +598,7 @@ About Page
 		height: 40vh;
 		margin-top: 8rem;
 		margin-bottom: 3rem;
+		background-position: left;
 	}
 	.about__content__wrap {
 		flex-direction: column;
