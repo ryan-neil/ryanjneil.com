@@ -25,6 +25,7 @@
 	--color-card-bg: var(--colorPrimaryBG);
 	--color-border-nav: #ccd4da;
 	--color-border: #14213d;
+	--color-box-shadow: rgba(0, 0, 0, .8);
 	/* Sizing */
 	--font-size-xsm: 0.750rem;
 	--font-size-sm: 0.875rem;
@@ -37,7 +38,7 @@
 	--text-lineHeight-md: 1.4;
 	/* Styles */
 	--transition: 0.2s ease-in-out;
-	--box-shadow-sm: 0px 0px 2px -1px rgba(0, 0, 0, .8), 0px 2px 9px -5px rgba(0, 0, 0, .8);
+	--box-shadow-sm: 0px 0px 2px -1px var(--color-box-shadow), 0px 2px 9px -5px var(--color-box-shadow);
 	--box-shadow-md: 0px 0px 2px -1px rgba(0, 0, 0, 1), 0px 4px 12px -5px rgba(0, 0, 0, 1);
 	--box-shadow-lg: 0px 0px 2px -1px rgba(0, 0, 0, 1), 0px 6px 14px -5px rgba(0, 0, 0, 1);
 	/* Images */
@@ -79,6 +80,8 @@
 	/* Borders */
 	--color-border-nav: #1b2e55;
 	--color-border: #1b2e55;
+	--color-box-shadow: rgba(2, 112, 255, 1);
+	--box-shadow-sm: 0px 0px 2px -1px var(--color-box-shadow), 0px 2px 9px -5px var(--color-box-shadow);
 	/* Images */
 	/* Production */
 	--projectImageGoSurf: url('../images/gosurf-screenshot-forecast_dark.png');
