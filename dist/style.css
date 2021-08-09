@@ -44,12 +44,12 @@ Navbar Section
 }
 /* Start styles after scrolling */
 .scrolling-active .navbar {
-	background: var(--color-primary-bg);
+	background: var(--colorPrimaryBG);
 	border-bottom: 1px solid var(--color-border-nav);
 	transition: var(--transition);
 }
 .scrolling-active .navbar {
-	background-color: var(--color-primary-bg);
+	background-color: var(--colorPrimaryBG);
 }
 /* End styles after scrolling */
 
@@ -74,7 +74,7 @@ Hero Section
 ==========================
 */
 .hero-section {
-	background-color: var(--color-primary-bg);
+	background-color: var(--colorPrimaryBG);
 	position: relative;
 	height: 100vh;
 	display: flex;
@@ -109,33 +109,12 @@ Hero Section
 .hero__links-icon {
 	height: 1.5rem;
 	width: 1.5rem;
-	fill: var(--color-text-subheading);
+	fill: var(--color-text-p);
 	transition: var(--transition);
 	margin-right: 1rem;
 }
 .hero__links-icon:hover {
 	fill: var(--color-text-heading);
-}
-.btn.hero {
-	font-family: 'Quicksand', sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.btn-icon.hero {
-	fill: var(--color-btn-text);
-	margin-left: .8rem;
-}
-.btn.hero:hover .btn-icon.hero {
-	animation: bounce 0.4s infinite alternate;
-}
-@keyframes bounce {
-	from {
-		transform: translateX(0px);
-	}
-	to {
-		transform: translateX(8px);
-	}
 }
 
 /* 
@@ -166,7 +145,7 @@ Projects Section
 ==========================
 */
 .projects-section {
-	background-color: var(--color-secondary-bg);
+	background-color: var(--colorSecondaryBG);
 }
 .projects-container {
 	max-width: 70rem;
@@ -187,9 +166,10 @@ Projects Section
 /* Projects card styles */
 .projects__card {
 	width: 100%;
-	height: 375px;
+	/* height: 375px; */
+	height: auto;
 	margin-top: 3rem;
-	background-color: var(--color-primary-bg);
+	background-color: var(--colorPrimaryBG);
 	border: 1px solid var(--color-border-card);
 	border-radius: 0.6rem;
 	box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, .1);
@@ -257,7 +237,7 @@ Projects Section
 }
 .project__content.odd {
 	border-top-left-radius: 10px;
-	background-color: var(--color-secondary-bg);
+	background-color: var(--colorSecondaryBG);
 	height: auto;
 	width: 100%;
 	position: relative;
@@ -265,7 +245,7 @@ Projects Section
 }
 .project__content.even {
 	border-top-right-radius: 10px;
-	background-color: var(--color-secondary-bg);
+	background-color: var(--colorSecondaryBG);
 	height: auto;
 	width: 100%;
 	position: relative;
@@ -366,7 +346,7 @@ Contact Section
 */
 .contact-section {
 	padding: 8rem 1rem;
-	background-color: var(--color-primary-bg);
+	background-color: var(--colorPrimaryBG);
 }
 .contact-container h2 {
 	font-size: var(--font-size-xxl);
@@ -380,7 +360,7 @@ Contact Section
 
 	/* Text Gradient */
 	/* Create the gradient. */
-	background-image: var(--color-primary-gradient);
+	background-image: var(--colorPrimaryGradient);
 	/* Set the background size and repeat properties. */
 	background-size: 100%;
 	background-repeat: repeat;
@@ -448,7 +428,7 @@ Footer Section
 ==========================
 */
 .footer-section {
-	background-color: var(--color-secondary-bg);
+	background-color: var(--colorSecondaryBG);
 }
 .footer-container {
 	max-width: 70rem;
@@ -502,7 +482,7 @@ About Page
 */
 #about {
 	padding: 1rem;
-	background-color: var(--color-secondary-bg);
+	background-color: var(--colorSecondaryBG);
 }
 .about-hero-container {
 	max-width: 70rem;
