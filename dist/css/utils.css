@@ -79,9 +79,7 @@
 	--color-text-p: #bfbfbfe6;
 	/* Borders */
 	--color-border-nav: #1b2e55;
-	--color-border: #1b2e55;
-	--color-box-shadow: rgba(2, 112, 255, 1);
-	--box-shadow-sm: 0px 0px 2px -1px var(--color-box-shadow), 0px 2px 9px -5px var(--color-box-shadow);
+	--color-border: #9eb4e0;
 	/* Images */
 	/* Production */
 	--projectImageGoSurf: url('../images/gosurf-screenshot-forecast_dark.png');
