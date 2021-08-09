@@ -15,7 +15,7 @@
 	--colorBlack: #0d0d0d;
 	--colorPrimaryGradient: linear-gradient(135deg, var(--colorPrimary) 10%, #07c8f9 100%);
 	/* Typography */
-	--color-text-heading: #101b32;
+	--color-text-heading: #182644;
 	--color-text-subheading: #14213d;
 	--color-text-btn: #14213d;
 	--color-text-icon: #14213d;
@@ -68,7 +68,7 @@
 	/* --colorPrimary: #6464fb;
 	--colorSecondary: #fa6b6b; */
 	--colorPrimaryBG: #101b32;
-	--colorSecondaryBG: #14213d;
+	--colorSecondaryBG: #162545;
 	--colorPrimaryLight: #33bbff;
 	--colorSecondaryLight: #33bbff;
 	--colorSecondarySuperLight: rgba(51, 187, 255, 0.2);
