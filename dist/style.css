@@ -168,8 +168,8 @@ Projects Section
 /* Projects card styles */
 .projects__card {
 	width: 100%;
-	/* height: 375px; */
 	height: auto;
+	padding: 2rem 2rem 0 2rem;
 	margin-top: 3rem;
 	background-color: var(--colorPrimaryBG);
 	border: 1px solid var(--color-border-card);
@@ -177,20 +177,24 @@ Projects Section
 	box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, .1);
 
 	display: flex;
-	gap: 1rem;
+	gap: 2rem;
 }
 /* Odd projects__card styles */
 .projects__card:nth-of-type(2n + 1) {
-	padding: 0;
+	/* padding-top: 2rem;
+	padding-left: 2rem; */
 }
 .project__content {
 	width: 50%;
 	height: auto;
 	flex: 1;
+
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 /* Text column styles */
 .project__content.text {
-	padding: 2rem 2rem;
+	padding-bottom: 2rem;
 }
 .project__content h3 {
 	font-size: var(--font-size-md);
@@ -224,11 +228,7 @@ Projects Section
 	transition: var(--transition);
 }
 /* Image column styles */
-.project__content.img {
-	margin-top: 1.6rem;
-}
 .project__content.odd {
-	border-top-left-radius: 10px;
 	background-color: var(--colorSecondaryBG);
 	height: auto;
 	width: 100%;
@@ -236,7 +236,6 @@ Projects Section
 	overflow: hidden;
 }
 .project__content.even {
-	border-top-right-radius: 10px;
 	background-color: var(--colorSecondaryBG);
 	height: auto;
 	width: 100%;
@@ -244,38 +243,16 @@ Projects Section
 	overflow: hidden;
 }
 .project__img.odd {
-	position: absolute;
-	top: 1rem;
-	right: 0;
-	left: 1rem;
-	bottom: 0;
+	padding: 1rem 1rem 0rem 1rem;
 }
 .project__img.even {
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	left: 0;
-	bottom: 0;
+	padding: 1rem 1rem 0rem 1rem;
 }
 /* Projects images */
-.project__img {
-	height: 100%;
-	width: auto;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.project__img.gosurf {
-	background-image: var(--projectImageGoSurf);
-}
-.project__img.codesnap {
-	background-image: var(--projectImageCodeSnap);
-}
-.project__img.sfpa {
-	background-image: var(--projectImageSFPA);
-}
-.project__img.cgpa {
-	background-image: var(--projectImageCGPA);
+.project__img img {
+	max-width: 100%;
+	max-height: auto;
+	display: block; /* remove extra space below image */
 }
 
 /* 
@@ -313,21 +290,16 @@ Projects Section
 		border-bottom-right-radius: 0.6rem;
 		border-bottom-left-radius: 0.6rem;
 	}
-	.project__content.img.even {
-		border-top-right-radius: 0;
-	}
-	.project__content.img.odd {
-		border-top-left-radius: 0;
+	.project__img img {
+		max-width: 100%;
+		max-height: 100%;
+		display: block; /* remove extra space below image */
 	}
 	.project__img.odd {
-		width: 100%;
-		height: 300px;
-		position: static;
+		padding: 0.50rem 0rem 0rem 0rem;
 	}
 	.project__img.even {
-		width: 100%;
-		height: 300px;
-		position: static;
+		padding: 0.50rem 0rem 0rem 0rem;
 	}
 }
 
