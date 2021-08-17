@@ -152,7 +152,7 @@ Projects Section
 .projects-container {
 	max-width: 70rem;
 	margin: auto;
-	padding: 8rem 1rem;
+	padding: 6rem 1rem;
 }
 /* Projects heading styles */
 .projects__heading {
@@ -189,8 +189,8 @@ Projects Section
 	height: auto;
 	flex: 1;
 
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	border-top-left-radius: 0.6rem;
+	border-top-right-radius: 0.6rem;
 }
 /* Text column styles */
 .project__content.text {
@@ -267,6 +267,7 @@ Projects Section
 	.projects__card {
 		flex-direction: column;
 		height: auto;
+		gap: 1rem;
 	}
 	.projects__card:nth-of-type(2n) {
 		flex-direction: column-reverse;
@@ -309,7 +310,7 @@ Contact Section
 ==========================
 */
 .contact-section {
-	padding: 8rem 1rem;
+	padding: 6rem 1rem;
 	background-color: var(--colorPrimaryBG);
 }
 .contact-container h2 {
