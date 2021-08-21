@@ -4,23 +4,25 @@
 */
 :root {
 	/* Portfolio Palette */
-	--colorPrimary: #00a6fb;
-	--colorSecondary: #00a6fb;
+	--colorPrimary: #007cc7;
+	--colorSecondary: #007cc7;
+
+	--colorPrimaryLight: #4da8da;
+	--colorSecondaryLight: #4da8da;
+	--colorSecondarySuperLight: rgba(77, 168, 218, 0.2);
+
 	--colorPrimaryBG: #fffffe;
 	--colorSecondaryBG: #f0f1f4;
-	--colorPrimaryLight: #33bbff;
-	--colorSecondaryLight: #33bbff;
-	--colorSecondarySuperLight: rgba(51, 187, 255, 0.2);
+
 	--colorWhite: #fffffe;
 	--colorBlack: #0d0d0d;
-	--colorPrimaryGradient: linear-gradient(135deg, var(--colorPrimary) 10%, #07c8f9 100%);
+	--colorPrimaryGradient: linear-gradient(135deg, var(--colorPrimary) 10%, var(--colorPrimaryLight) 100%);
 	/* Typography */
-	--color-text-heading: #182644;
-	--color-text-subheading: #14213d;
-	--color-text-btn: #14213d;
-	--color-text-icon: #14213d;
-	--color-text-p: rgb(20, 33, 61, 0.7);
-	--color-btn-bg: var(--colorPrimary);
+	--color-text-heading: #203647;
+	--color-text-subheading: rgba(32, 54, 71, 0.9);
+	--color-text-p: rgba(32, 54, 71, 0.8);
+	--color-btn-text: var(--color-text-heading);
+	--color-btn-bg: linear-gradient(135deg, var(--colorPrimary) 10%, var(--colorPrimaryLight) 100%);
 	--color-btn-border: var(--colorPrimaryLight);
 	--color-card-bg: var(--colorPrimaryBG);
 	--color-border-nav: #ccd4da;
@@ -42,19 +44,7 @@
 	--box-shadow-md: 0px 0px 2px -1px rgba(0, 0, 0, 1), 0px 4px 12px -5px rgba(0, 0, 0, 1);
 	--box-shadow-lg: 0px 0px 2px -1px rgba(0, 0, 0, 1), 0px 6px 14px -5px rgba(0, 0, 0, 1);
 	/* Images */
-	/* Production */
-	/* --projectImageGoSurf: url('../images/gosurf-screenshot-forecast_light.png');
-	--projectImageCodeSnap: url('../images/codesnap-screenshot_light.png');
-	--projectImageSFPA: url('../images/mac-browser-sfpa.png');
-	--projectImageCGPA: url('../images/mac-browser-cgpa.png'); */
 	--aboutHeroImage: url('../images/desert-day.svg');
-	/* Testing */
-	/* --projectImageGoSurf: url('/dist/images/gosurf-screenshot-forecast_light.png');
-	--projectImageCodeSnap: url('/dist/images/codesnap-screenshot_light.png');
-	--projectImageSFPA: url('/dist/images/mac-browser-sfpa.png');
-	--projectImageCGPA: url('/dist/images/mac-browser-cgpa.png');
-	--aboutHeroImage: url('/dist/images/desert-day.svg');
-	--aboutHeroGradient: linear-gradient(135deg, var(--colorPrimary) 10%, var(--colorSecondarySuperLight) 100%); */
 }
 
 /* 
@@ -63,36 +53,29 @@
 */
 .darkmode {
 	/* Portfolio Palette */
-	--colorPrimary: #00a6fb;
-	--colorSecondary: #00a6fb;
-	/* --colorPrimary: #6464fb;
-	--colorSecondary: #fa6b6b; */
-	--colorPrimaryBG: #101b32;
-	--colorSecondaryBG: #162545;
-	--colorPrimaryLight: #33bbff;
-	--colorSecondaryLight: #33bbff;
-	--colorSecondarySuperLight: rgba(51, 187, 255, 0.2);
-	/* --colorSecondarySuperLight: #fca31133; */ /* 33 */
+	--colorPrimary: #007cc7;
+	--colorSecondary: #007cc7;
+
+	--colorPrimaryLight: #4da8da;
+	--colorSecondaryLight: #4da8da;
+	--colorSecondarySuperLight: rgba(77, 168, 218, 0.2);
+
+	--colorPrimaryBG: #12232e;
+	--colorSecondaryBG: #203647;
 	/* Typography */
 	--color-text-heading: #f3f3f3;
 	--color-text-subheading: #bfbfbf;
-	--color-text-p: #bfbfbfe6;
+	--color-text-p: rgba(191, 191, 191, 0.8);
+	--color-btn-text: var(--color-text-heading);
 	/* Borders */
-	--color-border-nav: #1b2e55;
-	--color-border: #9eb4e0;
+	--color-border: var(--color-text-subheading);
+	--color-border-nav: var(--colorSecondaryBG);
 	/* Images */
-	/* Production */
 	--projectImageGoSurf: url('../images/gosurf-screenshot-forecast_dark.png');
 	--projectImageCodeSnap: url('../images/codesnap-screenshot_dark.png');
 	--projectImageSFPA: url('../images/mac-browser-sfpa.png');
 	--projectImageCGPA: url('../images/mac-browser-cgpa.png');
 	--aboutHeroImage: url('../images/desert-night.svg');
-	/* Testing */
-	/* --projectImageGoSurf: url('/dist/images/gosurf-screenshot-forecast_dark.png');
-	--projectImageCodeSnap: url('/dist/images/codesnap-screenshot_dark.png');
-	--projectImageSFPA: url('/dist/images/mac-browser-sfpa.png');
-	--projectImageCGPA: url('/dist/images/mac-browser-cgpa.png');
-	--aboutHeroImage: url('/dist/images/desert-night.svg'); */
 }
 
 /* 
@@ -132,10 +115,10 @@ a {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 500;
 	font-size: var(--font-size-base);
-	color: var(--color-text-btn);
+	color: var(--color-btn-text);
 	padding: 0.6rem 1rem;
-	background: var(--colorPrimary);
-	border: 1px solid var(--colorPrimaryLight);
+	background-image: var(--color-btn-bg);
+	border: 1px solid var(--color-btn-border);
 	border-radius: 5px;
 	cursor: pointer;
 	box-shadow: var(--box-shadow-sm);
@@ -146,7 +129,7 @@ a {
 }
 .btn-icon {
 	width: var(--font-size-md);
-	fill: var(--color-text-btn);
+	fill: var(--color-btn-text);
 	margin-left: 0.6rem;
 }
 
