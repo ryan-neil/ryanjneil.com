@@ -44,12 +44,12 @@ Navbar Section
 }
 /* Start styles after scrolling */
 .scrolling-active .navbar {
-	background: var(--colorPrimaryBG);
+	background: var(--color-primary-bg);
 	border-bottom: 1px solid var(--color-border-nav);
 	transition: var(--transition);
 }
 .scrolling-active .navbar {
-	background-color: var(--colorPrimaryBG);
+	background-color: var(--color-primary-bg);
 }
 /* End styles after scrolling */
 
@@ -74,7 +74,7 @@ Hero Section
 ==========================
 */
 .hero-section {
-	background-color: var(--colorPrimaryBG);
+	background-color: var(--color-primary-bg);
 	position: relative;
 	height: 100vh;
 	display: flex;
@@ -147,7 +147,7 @@ Projects Section
 ==========================
 */
 .projects-section {
-	background-color: var(--colorSecondaryBG);
+	background-color: var(--color-secondary-bg);
 }
 .projects-container {
 	max-width: 70rem;
@@ -171,7 +171,7 @@ Projects Section
 	height: auto;
 	padding: 2rem 2rem 0 2rem;
 	margin-top: 3rem;
-	background-color: var(--colorPrimaryBG);
+	background-color: var(--color-primary-bg);
 	border: 1px solid var(--color-border-card);
 	border-radius: 0.6rem;
 	box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, .1);
@@ -229,14 +229,14 @@ Projects Section
 }
 /* Image column styles */
 .project__content.odd {
-	background-color: var(--colorSecondaryBG);
+	background-color: var(--color-secondary-bg);
 	height: auto;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
 }
 .project__content.even {
-	background-color: var(--colorSecondaryBG);
+	background-color: var(--color-secondary-bg);
 	height: auto;
 	width: 100%;
 	position: relative;
@@ -316,7 +316,7 @@ Contact Section
 */
 .contact-section {
 	padding: 6rem 1rem;
-	background-color: var(--colorPrimaryBG);
+	background-color: var(--color-primary-bg);
 }
 .contact-container h2 {
 	font-size: var(--font-size-xxl);
@@ -330,7 +330,7 @@ Contact Section
 
 	/* Text Gradient */
 	/* Create the gradient. */
-	background-image: var(--colorPrimaryGradient);
+	background-image: var(--color-accent-gradient);
 	/* Set the background size and repeat properties. */
 	background-size: 100%;
 	background-repeat: repeat;
@@ -397,7 +397,7 @@ Footer Section
 ==========================
 */
 .footer-section {
-	background-color: var(--colorSecondaryBG);
+	background-color: var(--color-secondary-bg);
 }
 .footer-container {
 	max-width: 70rem;
@@ -451,7 +451,7 @@ About Page
 */
 #about {
 	padding: 1rem;
-	background-color: var(--colorSecondaryBG);
+	background-color: var(--color-secondary-bg);
 }
 .about-hero-container {
 	max-width: 70rem;
