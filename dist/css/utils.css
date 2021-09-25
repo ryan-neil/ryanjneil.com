@@ -61,12 +61,12 @@
 */
 .darkmode {
 	/* Portfolio Palette */
-	--color-primary: rgb(254, 82, 97);
+	--color-primary: #fe5261;
 	--color-secondary: rgb(45, 156, 253);
 	/* --color-primary: #007cc7;
 	--color-secondary: #007cc7; */
 
-	--color-primary-light: rgba(254, 82, 97, 0.5);
+	--color-primary-light: #ff6b77;
 	--color-primary-supa-light: rgba(254, 82, 97, 0.2);
 	--color-secondary-light: rgba(45, 156, 253, 0.5);
 	--color-secondary-supa-light: rgba(45, 156, 253, 0.2);
