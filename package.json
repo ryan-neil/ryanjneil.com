@@ -2,8 +2,11 @@
 	"name": "joseph-skycrest-portfolio",
 	"version": "1.0.0",
 	"description": "This is the repo for my personal portfolio. The portfolio was built with plain HTML, CSS and JavaScripts. Deployed on Netlify.",
-	"main": "index.js",
-	"scripts": {},
+	"main": "dist/server.js",
+	"scripts": {
+		"dev:start": "node src/server.js",
+		"dev:build": "nodemon src/server.js"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ryan-neil/JosephSkycrest-Netflify.git"
@@ -15,5 +18,10 @@
 		"url": "https://github.com/ryan-neil/JosephSkycrest-Netflify/issues"
 	},
 	"homepage": "https://github.com/ryan-neil/JosephSkycrest-Netflify#readme",
-	"dependencies": {}
+	"dependencies": {
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.14"
+	}
 }
