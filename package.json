@@ -4,8 +4,8 @@
 	"description": "This is the repo for my personal portfolio. The portfolio was built with plain HTML, CSS and JavaScripts. Deployed on Netlify.",
 	"main": "dist/server.js",
 	"scripts": {
-		"dev:start": "node src/server.js",
-		"dev:build": "nodemon src/server.js"
+		"dev:start": "node dist/server.js",
+		"dev:build": "nodemon dist/server.js"
 	},
 	"repository": {
 		"type": "git",
