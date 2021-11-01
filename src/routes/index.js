@@ -4,14 +4,12 @@ const router = express.Router();
 
 // index route
 router.get('/', (req, res) => {
-	// res.send('Home page');
-	res.sendFile(path.join(__dirname, './index.html'));
+	res.sendFile(path.join(__dirname, '../views/index.html'));
 });
 
 // about route
 router.get('/about', (req, res) => {
-	// res.send('About page');
-	res.sendFile(path.join(__dirname, './public/about.html'));
+	res.sendFile(path.join(__dirname, '../views/about.html'));
 });
 
 module.exports = router;

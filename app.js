@@ -4,21 +4,17 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// serve static folder
-app.use(express.static(path.join(__dirname, 'public')));
+// import routes
+const routes = require('./src/routes/index');
 
-// index route
-app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, './public/index.html'));
-});
+// serve static files
+app.use(express.static(path.join(__dirname, 'src/public')));
 
-// about route
-app.get('/about', (req, res) => {
-	res.sendFile(path.join(__dirname, './public/about.html'));
-});
+// serve all routes
+app.use(routes);
 
 // start our server...
 const PORT = process.env.PORT || 3080;
 const server = app.listen(PORT, () => {
-	console.log('Listening on port ' + server.address().port);
+	console.log('Server listening on port', PORT);
 });

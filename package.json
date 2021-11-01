@@ -2,7 +2,7 @@
 	"name": "joseph-skycrest-portfolio",
 	"version": "1.0.0",
 	"description": "This is the repo for my personal portfolio. The portfolio was built with plain HTML, CSS and JavaScripts. Deployed on Netlify.",
-	"main": "index.js",
+	"main": "app.js",
 	"scripts": {
 		"start": "node app.js",
 		"build": "node app.js",
@@ -12,9 +12,9 @@
 		"type": "git",
 		"url": "git+https://github.com/ryan-neil/JosephSkycrest-Netflify.git"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"keywords": [ "html", "css", "javascript", "express.js", "netlify" ],
+	"author": "Ryan Neil",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/ryan-neil/JosephSkycrest-Netflify/issues"
 	},
