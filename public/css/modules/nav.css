@@ -1,0 +1,127 @@
+/* ==========================
+Navbar Section
+*/
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	background-color: none;
+}
+.navbar-container {
+	max-width: 70rem;
+	margin: auto;
+	padding: 1rem 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav__logo {
+	font-weight: 500;
+	font-size: var(--font-size-lg);
+	letter-spacing: -1px;
+	transition: var(--transition);
+}
+.nav__logo a {
+	color: var(--color-text-heading);
+}
+.btn.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.nav__logo:hover {
+	opacity: .9;
+}
+.navbar__item.elements {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+/* styles after scrolling */
+.scrolling-active .navbar {
+	background: var(--color-primary-bg);
+	border-bottom: 1px solid var(--color-border-nav);
+	transition: var(--transition);
+}
+.scrolling-active .navbar {
+	background-color: var(--color-primary-bg);
+}
+/* =================================
+[Navbar] Web Responsive Media
+*/
+@media (max-width: 42.611em) {
+	.navbar {
+		position: absolute;
+	}
+	.btn.nav {
+		display: none;
+	}
+}
+
+/* ==========================
+Hero Section
+*/
+.hero-section {
+	background-color: var(--color-primary-bg);
+	position: relative;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+}
+.hero-col {
+	max-width: 70rem;
+	margin: auto;
+	padding: 0 1rem;
+}
+.hero-section h1 {
+	font-weight: 600;
+	font-size: var(--font-size-xxl);
+	color: var(--color-text-heading);
+	letter-spacing: .025rem;
+	line-height: var(--text-lineHeight-sm);
+	margin-bottom: 2rem;
+}
+.hero-section h2 {
+	width: 75%;
+	font-size: var(--font-size-lg);
+	font-weight: 500;
+	color: var(--color-text-subheading);
+	line-height: var(--text-lineHeight-md);
+}
+.hero-links-wrapper {
+	margin: 1.4rem 0;
+	display: flex;
+}
+.hero__links-icon {
+	height: 1.5rem;
+	width: 1.5rem;
+	fill: var(--color-text-p);
+	transition: var(--transition);
+	margin-right: 1rem;
+}
+.hero__links-icon:hover {
+	fill: var(--color-text-heading);
+}
+/* =================================
+[Hero] Web Responsive Media
+*/
+@media (max-width: 42.611em) {
+	.hero-col {
+		width: 100%;
+	}
+	.hero-section h1 {
+		font-size: var(--font-size-xl);
+	}
+	.hero-section h2 {
+		font-size: var(--font-size-md);
+		width: 100%;
+	}
+	.hero-btn-content {
+		font-size: var(--font-size-base);
+	}
+}

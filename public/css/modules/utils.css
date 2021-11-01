@@ -1,36 +1,31 @@
-/* 
-=================================
-[Root]
-*/
 :root {
 	/* Portfolio Palette */
 	--color-primary: #fe5261;
 	--color-secondary: rgb(45, 156, 253);
-	/* --color-primary: #007cc7;
-	--color-secondary: #007cc7; */
-
 	--color-primary-light: rgba(254, 82, 97, 0.5);
 	--color-primary-supa-light: rgba(254, 82, 97, 0.2);
 	--color-secondary-light: rgba(45, 156, 253, 0.5);
 	--color-secondary-supa-light: rgba(45, 156, 253, 0.2);
-	/* --color-primary-light: #4da8da;
-	--color-primary-supa-light: rgba(77, 168, 218, 0.2);
-	--color-secondary-light: #4da8da;
-	--color-secondary-supa-light: rgba(77, 168, 218, 0.2); */
-
 	--color-primary-bg: #fffffe;
 	--color-secondary-bg: #f0f1f4;
-
 	--color-white: #fffffe;
 	--color-black: #0d0d0d;
-	--color-primary-gradient: linear-gradient(135deg, var(--color-secondary) 10%, var(--color-secondary-light) 100%);
+	--color-primary-gradient: linear-gradient(
+		135deg,
+		var(--color-secondary) 10%,
+		var(--color-secondary-light) 100%
+	);
 	--color-accent-gradient: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
 	/* Typography */
 	--color-text-heading: #203647;
 	--color-text-subheading: rgba(32, 54, 71, 0.9);
 	--color-text-p: rgba(32, 54, 71, 0.8);
 	--color-btn-text: var(--color-text-heading);
-	--color-btn-bg: linear-gradient(135deg, var(--color-primary) 10%, var(--color-primary-light) 100%);
+	--color-btn-bg: linear-gradient(
+		135deg,
+		var(--color-primary) 10%,
+		var(--color-primary-light) 100%
+	);
 	--color-btn-border: var(--color-primary-light);
 	--color-card-bg: var(--color-primary-bg);
 	--color-border-nav: #ccd4da;
@@ -48,33 +43,23 @@
 	--text-lineHeight-md: 1.4;
 	/* Styles */
 	--transition: 0.2s ease-in-out;
-	--box-shadow-sm: 0px 1px 5px -1px var(--color-box-shadow-dark), 0px 2px 9px -6px var(--color-box-shadow-dark);
+	--box-shadow-sm: 0px 1px 5px -1px var(--color-box-shadow-dark),
+		0px 2px 9px -6px var(--color-box-shadow-dark);
 	--box-shadow-md: 0px 0px 2px -1px rgba(0, 0, 0, 1), 0px 4px 12px -5px rgba(0, 0, 0, 1);
 	--box-shadow-lg: 0px 0px 2px -1px rgba(0, 0, 0, 1), 0px 6px 14px -5px rgba(0, 0, 0, 1);
 	/* Images */
 	--aboutHeroImage: url('../images/desert-day.svg');
 }
 
-/* 
-=================================
-[Dark mode variables]
-*/
+/* Dark mode */
 .darkmode {
 	/* Portfolio Palette */
 	--color-primary: #fe5261;
 	--color-secondary: rgb(45, 156, 253);
-	/* --color-primary: #007cc7;
-	--color-secondary: #007cc7; */
-
 	--color-primary-light: #ff6b77;
 	--color-primary-supa-light: rgba(254, 82, 97, 0.2);
 	--color-secondary-light: rgba(45, 156, 253, 0.5);
 	--color-secondary-supa-light: rgba(45, 156, 253, 0.2);
-	/* --color-primary-light: #4da8da;
-	--color-primary-supa-light: rgba(77, 168, 218, 0.2);
-	--color-secondary-light: #4da8da;
-	--color-secondary-supa-light: rgba(77, 168, 218, 0.2); */
-
 	--color-primary-bg: #12232e;
 	--color-secondary-bg: #203647;
 	/* Typography */
@@ -93,11 +78,18 @@
 	--projectImageCGPA: url('../images/mac-browser-cgpa.png');
 	--aboutHeroImage: url('../images/desert-night.svg');
 }
+/* Dark mode toggle */
+.dark-mode-toggle {
+	fill: var(--color-text-heading);
+	background: transparent;
+	cursor: pointer;
+	width: 1.8rem;
+	height: 1.8rem;
+	padding: 4px;
+	border: none;
+}
 
-/* 
-=================================
-[Resets]
-*/
+/* Resets */
 * {
 	margin: 0;
 	padding: 0;
@@ -123,10 +115,7 @@ a {
 	text-decoration: none;
 }
 
-/* 
-=================================
-[Buttons]
-*/
+/* Buttons */
 .btn {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 500;
@@ -149,8 +138,7 @@ a {
 	fill: var(--color-white);
 	margin-left: 0.6rem;
 }
-
-/* Hero button */
+/* hero button */
 .btn.hero {
 	display: flex;
 	justify-content: center;
@@ -171,7 +159,7 @@ a {
 	}
 }
 
-/* Project button tags */
+/* Tags */
 .btn-tag {
 	display: inline;
 	font-size: var(--font-size-xsm);
@@ -186,17 +174,13 @@ a {
 	border-radius: 0.3rem;
 }
 
-/* 
-=================================
-[Text underline]
-*/
+/* Text underline */
 .text-underline {
 	display: inline-block;
 	position: relative;
 	z-index: 10;
 }
 .text-underline.lg::after {
-	/* background-image: var(--color-accent-gradient); */
 	background: var(--color-secondary);
 	bottom: 12%;
 	content: '';
@@ -207,7 +191,6 @@ a {
 	z-index: -1;
 }
 .text-underline.sm::after {
-	/* background-image: var(--color-accent-gradient); */
 	background: var(--color-primary);
 	bottom: 5%;
 	content: '';
@@ -223,24 +206,7 @@ a {
 	}
 }
 
-/* 
-=================================
-[Dark-Light Toggle]
-*/
-.dark-mode-toggle {
-	fill: var(--color-text-heading);
-	background: transparent;
-	cursor: pointer;
-	width: 1.8rem;
-	height: 1.8rem;
-	padding: 4px;
-	border: none;
-}
-
-/* 
-==========================
-[Fader Styles] 
-*/
+/* Faders */
 .fade-in {
 	opacity: 0;
 	transition: opacity 500ms ease-in;

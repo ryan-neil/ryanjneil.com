@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g id="Group_1" data-name="Group 1" transform="translate(-67 -56)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(67 56)" fill="#201e1c" stroke="#403c37" stroke-width="2">
+      <rect width="100" height="100" rx="10" stroke="none"/>
+      <rect x="1" y="1" width="98" height="98" rx="9" fill="none"/>
+    </g>
+    <text id="JS" transform="translate(76 134)" fill="#fff" font-size="79" font-family="Ubuntu-Regular, Ubuntu"><tspan x="0" y="0">JS</tspan></text>
+  </g>
+</svg>

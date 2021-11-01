@@ -16,8 +16,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <!-- CSS -->
-  <link rel="stylesheet" href="css/utils.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modules/utils.css">
+  <link rel="stylesheet" href="css/modules/nav.css">
+  <link rel="stylesheet" href="css/modules/footer.css">
+  <link rel="stylesheet" href="css/modules/about.css">
+  <link rel="stylesheet" href="css/app.css">
   <!-- JS -->
   <script src="js/app.js" defer></script>
 </head>
@@ -31,7 +34,7 @@
         <!-- Logo -->
         <div class="navbar__item">
           <div class="nav__logo">
-            <a title="That's me!" href="#">Joseph Skycrest</a>
+            <a title="That's me!" href="/">Joseph Skycrest</a>
           </div>
         </div>
         <!-- Elements Container -->
@@ -78,8 +81,8 @@
     <div class="hero-col fade-in">
       <!-- Hero Text -->
       <h1><span class="text-underline lg">Software Engineer</span> currently based in San Diego, California.</h1>
-      <h2>Hello! My name is Ryan and I’m an architect turned software engineer. I love building fast, light-weight
-        applications and PWA’s. <span class="text-underline sm">JavaScript</span> is my "native" programming
+      <h2>Hello! My name is Ryan and I’m an architect turned software engineer. I love building fast and light-weight
+        full-stack applications. <span class="text-underline sm">JavaScript</span> is my "native" programming
         language.
         I primarily use
         it in the frontend with <span class="text-underline sm">React</span> and in the backend with <span
@@ -188,6 +191,7 @@ c9.1,0,16.5,7.4,16.5,16.5C304.5,332.2,297.1,339.6,288,339.6z" />
       </div>
       <!-- Projects Cards -->
       <div class="projects__card__wrapper">
+
         <!-- Project 1 -->
         <article class="projects__card">
           <!-- Project Text Card -->
@@ -271,6 +275,12 @@ c9.1,0,16.5,7.4,16.5,16.5C304.5,332.2,297.1,339.6,288,339.6z" />
         </article>
         <!-- Project 2 -->
         <article class="projects__card">
+          <!-- Project Image Card -->
+          <div class="project__content img odd fade-in">
+            <div class="project__img odd sfpa">
+              <img src="images/mac-browser-sfpa.png" alt="San Francisco Post Acute Project Screenshot">
+            </div>
+          </div>
           <!-- Project Text Card -->
           <div class="project__content text fade-in">
             <div class="btn-tag">Website</div>
@@ -342,21 +352,9 @@ c9.1,0,16.5,7.4,16.5,16.5C304.5,332.2,297.1,339.6,288,339.6z" />
               </a>
             </div>
           </div>
-          <!-- Project Image Card -->
-          <div class="project__content img odd fade-in">
-            <div class="project__img odd sfpa">
-              <img src="images/mac-browser-sfpa.png" alt="San Francisco Post Acute Project Screenshot">
-            </div>
-          </div>
         </article>
         <!-- Project 3 -->
         <article class="projects__card">
-          <!-- Project Image Card -->
-          <div class="project__content img even fade-in">
-            <div class="project__img even cgpa">
-              <img src="images/mac-browser-cgpa.png" alt="Central Gardens Post Acute Project Screenshot">
-            </div>
-          </div>
           <!-- Project Text Card -->
           <div class="project__content text fade-in">
             <div class="btn-tag">Website</div>
@@ -427,6 +425,12 @@ c9.1,0,16.5,7.4,16.5,16.5C304.5,332.2,297.1,339.6,288,339.6z" />
                   </svg>
                 </figure>
               </a>
+            </div>
+          </div>
+          <!-- Project Image Card -->
+          <div class="project__content img even fade-in">
+            <div class="project__img even cgpa">
+              <img src="images/mac-browser-cgpa.png" alt="Central Gardens Post Acute Project Screenshot">
             </div>
           </div>
         </article>

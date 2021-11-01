@@ -1,0 +1,48 @@
+/* ==========================
+Footer Section
+*/
+.footer-section {
+	background-color: var(--color-secondary-bg);
+}
+.footer-container {
+	max-width: 70rem;
+	margin: auto;
+	padding: 6rem 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer__col {
+	font-size: var(--font-size-base);
+	font-weight: 500;
+	color: var(--color-text-p);
+}
+.footer__col a {
+	color: var(--color-text-p);
+	padding-left: 1.4rem;
+	transition: var(--transition);
+}
+.footer__col a:hover {
+	color: var(--color-text-heading);
+}
+/* =================================
+[Footer] Responsive Media
+*/
+@media (max-width: 42.611em) {
+	.footer-container {
+		padding: 4rem 1rem;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.footer__col.legal {
+		font-size: var(--font-size-sm);
+	}
+	.footer__col.social {
+		margin-bottom: 2rem;
+	}
+	.footer__col a {
+		margin: 0 1rem;
+		padding-left: 0;
+	}
+}
