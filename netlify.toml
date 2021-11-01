@@ -1,6 +1,2 @@
-# netlify.toml file code
 [build]
   functions = "functions"
-  publish = "dist"
-
-## more info https://www.netlify.com/docs/netlify-toml-refernce/ or https://docs.netlify.com/configure-builds/file-based-configuration/#sample-file

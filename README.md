@@ -1,34 +1,55 @@
 <p align="center">
-  <img src="/assets/js-logo.svg" width="500" alt="js-hero">
+  <img src="js-logo.svg" width="200" alt="js-hero">
 </p>
 
-## Introduction
-This is the repo for my personal portfolio. The portfolio was built with plain HTML, CSS and JavaScripts. Deployed on [Netlify](https://www.netlify.com/).
 
-[View the live site >>](https://www.josephskycrest.com/)
+This is the repo for my personal portfolio. The frontend was built with plain HTML, CSS and JavaScripts. The backend was built with [Express.js](https://expressjs.com/) and deployed on [Netlify](https://www.netlify.com/).
+
+<h1></h1>
+
+[![Netlify
+Status](https://api.netlify.com/api/v1/badges/9aaef7de-1e5d-4fda-bc39-faa10a68b35b/deploy-status)](https://app.netlify.com/sites/josephskycrest/deploys)
+
+[Live site >>](https://www.josephskycrest.com/)
 
 ###### Let's connect on Twitter! 🤙🏻
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/home?lang=en)
 
-### 🧐 What's inside?
+# 🧐 What's inside?
 A quick look at the files and directories you'll see in the repo.
 
 ```bash
-├─ assets
-├─ dist
-│ ├─ components
-│ │ └─ site components
-│ ├─ images
-│ ├─ js
-│ │ └─ app.js
-│ ├─ about.html
-│ ├─ index.html
-│ └─ style.css
-└─ README.md
+├── dist
+├── src
+│  ├── config
+│  │  └── index.js
+│  ├── public
+│  │  ├── css
+│  │  │  ├── modules
+│  │  │  │  ├── header.css
+│  │  │  │  ├── footer.css
+│  │  │  │  └── utils.css
+│  │  │  └── app.css
+│  │  ├── images
+│  │  │  └── app images
+│  │  └── js
+│  │     ├── modules
+│  │     │  ├── db.js
+│  │     │  └── utils.js
+│  │     └── app.js
+│  ├── routes
+│  │  └── index.js
+│  ├── views
+│  │  ├── layouts
+│  │  │  └── layout.ejs
+│  │  ├── partials
+│  │  │  ├── header.ejs
+│  │  │  └── footer.ejs
+│  │  ├── index.ejs
+│  │  └── about.ejs
+│  ├── app.js
+│  ├── local-server.js
+│  ├── netlify.toml
+│  └── package.json
+└── README.md
 ```
-
-----
-
-### 🔗 Project Resources
-- [Google Material Design](https://material.io/)
-- [Material Design - Dark Theme](https://material.io/design/color/dark-theme.html#ui-application)

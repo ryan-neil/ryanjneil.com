@@ -2,17 +2,23 @@
 	"name": "joseph-skycrest-portfolio",
 	"version": "1.0.0",
 	"description": "This is the repo for my personal portfolio. The portfolio was built with plain HTML, CSS and JavaScripts. Deployed on Netlify.",
-	"main": "app.js",
+	"main": "functions/server.js",
 	"scripts": {
-		"start": "node app.js",
-		"build": "node app.js",
-		"dev": "nodemon app.js"
+		"start": "./node_modules/.bin/netlify-lambda serve src",
+		"build": "./node_modules/.bin/netlify-lambda build src",
+		"dev": "nodemon local-server.js"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ryan-neil/JosephSkycrest-Netflify.git"
 	},
-	"keywords": [ "html", "css", "javascript", "express.js", "netlify" ],
+	"keywords": [
+		"html",
+		"css",
+		"javascript",
+		"express.js",
+		"netlify"
+	],
 	"author": "Ryan Neil",
 	"license": "MIT",
 	"bugs": {
@@ -20,8 +26,9 @@
 	},
 	"homepage": "https://github.com/ryan-neil/JosephSkycrest-Netflify#readme",
 	"dependencies": {
-		"dotenv": "^10.0.0",
-		"express": "^4.17.1"
+		"express": "^4.17.1",
+		"netlify-lambda": "^2.0.15",
+		"serverless-http": "^2.7.0"
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.14"

@@ -64,8 +64,8 @@
 	--color-secondary-bg: #203647;
 	/* Typography */
 	--color-text-heading: #f3f3f3;
-	--color-text-subheading: #bfbfbf;
-	--color-text-p: rgba(191, 191, 191, 0.8);
+	--color-text-subheading: rgba(243, 243, 243, 0.8);
+	--color-text-p: rgba(243, 243, 243, 0.8);
 	--color-box-shadow: #445c88;
 	--color-btn-text: var(--color-white);
 	/* Borders */
