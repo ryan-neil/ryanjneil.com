@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="js-logo.svg" width="200" alt="js-hero">
+  <img src="./repo-logo.svg" width="400" alt="js-hero">
 </p>
 
 
@@ -7,8 +7,7 @@ This is the repo for my personal portfolio. The frontend was built with plain HT
 
 <h1></h1>
 
-[![Netlify
-Status](https://api.netlify.com/api/v1/badges/9aaef7de-1e5d-4fda-bc39-faa10a68b35b/deploy-status)](https://app.netlify.com/sites/josephskycrest/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f7dcf921-ae31-4dbf-9594-b721bdec6fb3/deploy-status)](https://app.netlify.com/sites/josephskycrest/deploys)
 
 [Live site >>](https://www.josephskycrest.com/)
 
