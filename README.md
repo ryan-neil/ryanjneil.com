@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo.svg" width="400" alt="js-hero">
+  <img src="./logo.svg" width="200" alt="joseph skycrest logo">
 </p>
 
 
