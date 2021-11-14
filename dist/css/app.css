@@ -3,7 +3,7 @@ Section Colors
 */
 .projects-section {
 	background-color: var(--secondary-bg);
-	padding: 3rem 0;
+	padding: 3rem 1rem;
 }
 
 /* ======================
