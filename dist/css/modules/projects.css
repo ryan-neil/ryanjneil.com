@@ -37,6 +37,7 @@ Projects Section
 
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	gap: 1rem;
 
 	height: auto;
@@ -66,6 +67,7 @@ Projects Section
 	width: 100%;
 }
 .project-card__item.img {
+	height: auto;
 	background-color: var(--secondary-bg);
 	padding: 1rem 1rem 0 1rem;
 	border-radius: 0.6rem 0.6rem 0 0;
@@ -90,7 +92,6 @@ Projects Section
 		gap: 1rem;
 
 		padding: 1rem;
-		/* width: 100%; */
 		border-radius: 0;
 	}
 	.project-card__item.img {
