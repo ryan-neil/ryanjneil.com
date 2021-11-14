@@ -119,19 +119,21 @@ a {
 }
 
 /* Buttons */
-.btn {
-	width: fit-content;
+button {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 500;
-	font-size: var(--font-size-base);
+	font-size: 1rem;
 	color: var(--white);
+	background: none;
+	border: none;
+}
+.btn {
+	width: fit-content;
 	padding: 0.6rem 1rem;
-	/* background-image: var(--accent-gradient); */
 	background-color: var(--primary);
 	border: 1px solid var(--primary-light);
 	border-radius: 5px;
 	cursor: pointer;
-	box-shadow: var(--box-shadow-sm);
 	transition: var(--transition);
 }
 .btn:hover {
