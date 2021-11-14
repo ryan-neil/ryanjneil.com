@@ -44,6 +44,8 @@ Projects Section
 	gap: 1rem;
 }
 .project-card__icons {
+	margin-top: 0.5rem;
+	padding-bottom: 1rem;
 	display: flex;
 	gap: 1rem;
 }
@@ -55,8 +57,8 @@ Projects Section
 .project-card__icons svg:hover {
 	fill: var(--text-h);
 }
-.project-card__item.text {
-	padding-bottom: 1rem;
+.project-card__item p {
+	margin-top: -5px;
 }
 .project-card__item img {
 	width: 100%;
@@ -75,11 +77,22 @@ Projects Section
 [Projects] Responsive Media
 */
 @media (max-width: 45em) {
+	.project-wrapper {
+		gap: 1rem;
+	}
+	.project-wrapper__item {
+		gap: 1rem;
+	}
 	.project-card {
 		flex-direction: column;
 		gap: 1rem;
+
+		padding: 1rem;
+		width: 100%;
+		border-radius: 0;
 	}
 	.project-card__item.img {
-		padding: 0.5rem 0.5rem 0 0.5rem;
+		border-radius: 0.6rem;
+		padding: 0.5rem;
 	}
 }

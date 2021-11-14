@@ -121,7 +121,4 @@ Hero Section
 		font-size: var(--font-size-md);
 		width: 100%;
 	}
-	.hero-btn-content {
-		font-size: var(--font-size-base);
-	}
 }

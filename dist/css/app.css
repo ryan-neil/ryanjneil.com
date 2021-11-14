@@ -3,13 +3,19 @@ Section Colors
 */
 .projects-section {
 	background-color: var(--secondary-bg);
-	padding: 3rem 1rem;
+	/* padding: 3rem 1rem; */
+}
+@media (max-width: 45em) {
+	.projects-section {
+		padding: 3rem 0;
+	}
 }
 
 /* ======================
 Section Headings
 */
 .projects-heading {
+	padding: 0 1rem;
 	margin-bottom: 3rem;
 }
 .projects-heading h2 {
