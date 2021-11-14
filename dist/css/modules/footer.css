@@ -2,7 +2,7 @@
 Footer Section
 */
 .footer-section {
-	background-color: var(--color-secondary-bg);
+	background-color: var(--secondary-bg);
 }
 .footer-container {
 	max-width: 70rem;
@@ -15,15 +15,15 @@ Footer Section
 .footer__col {
 	font-size: var(--font-size-base);
 	font-weight: 500;
-	color: var(--color-text-p);
+	color: var(--text-p);
 }
 .footer__col a {
-	color: var(--color-text-p);
+	color: var(--text-p);
 	padding-left: 1.4rem;
 	transition: var(--transition);
 }
 .footer__col a:hover {
-	color: var(--color-text-heading);
+	color: var(--text-h);
 }
 /* =================================
 [Footer] Responsive Media

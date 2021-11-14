@@ -24,7 +24,7 @@ Navbar Section
 	transition: var(--transition);
 }
 .nav__logo a {
-	color: var(--color-text-heading);
+	color: var(--text-h);
 }
 .btn.nav {
 	display: flex;
@@ -42,12 +42,12 @@ Navbar Section
 }
 /* styles after scrolling */
 .scrolling-active .navbar {
-	background: var(--color-primary-bg);
-	border-bottom: 1px solid var(--color-border-nav);
+	background: var(--primary-bg);
+	border-bottom: 1px solid var(--border-nav);
 	transition: var(--transition);
 }
 .scrolling-active .navbar {
-	background-color: var(--color-primary-bg);
+	background-color: var(--primary-bg);
 }
 /* =================================
 [Navbar] Web Responsive Media
@@ -65,7 +65,7 @@ Navbar Section
 Hero Section
 */
 .hero-section {
-	background-color: var(--color-primary-bg);
+	background-color: var(--primary-bg);
 	position: relative;
 	height: 100vh;
 	display: flex;
@@ -81,7 +81,7 @@ Hero Section
 .hero-section h1 {
 	font-weight: 600;
 	font-size: var(--font-size-xxl);
-	color: var(--color-text-heading);
+	color: var(--text-h);
 	letter-spacing: .025rem;
 	line-height: var(--text-lineHeight-sm);
 	margin-bottom: 2rem;
@@ -90,7 +90,7 @@ Hero Section
 	width: 75%;
 	font-size: var(--font-size-lg);
 	font-weight: 500;
-	color: var(--color-text-subheading);
+	color: var(--text-sh);
 	line-height: var(--text-lineHeight-md);
 }
 .hero-links-wrapper {
@@ -100,12 +100,12 @@ Hero Section
 .hero__links-icon {
 	height: 1.5rem;
 	width: 1.5rem;
-	fill: var(--color-text-p);
+	fill: var(--text-p);
 	transition: var(--transition);
 	margin-right: 1rem;
 }
 .hero__links-icon:hover {
-	fill: var(--color-text-heading);
+	fill: var(--text-h);
 }
 /* =================================
 [Hero] Web Responsive Media
