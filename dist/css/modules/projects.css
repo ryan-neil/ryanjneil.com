@@ -15,6 +15,8 @@ Projects Section
 	gap: 3rem;
 }
 .project-wrapper__item {
+	width: 100%;
+
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
@@ -88,7 +90,7 @@ Projects Section
 		gap: 1rem;
 
 		padding: 1rem;
-		width: 100%;
+		/* width: 100%; */
 		border-radius: 0;
 	}
 	.project-card__item.img {
