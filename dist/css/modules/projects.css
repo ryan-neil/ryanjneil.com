@@ -1,3 +1,39 @@
+/* Project icons */
+.project-card__icons {
+	width: 100%;
+	margin-top: 0.5rem;
+	padding-bottom: 1rem;
+
+	display: flex;
+	gap: 1rem;
+}
+.project-card__icons svg {
+	width: 1.4rem;
+	fill: var(--text-p);
+	transition: var(--transition);
+}
+.project-card__icons svg:hover {
+	fill: var(--text-h);
+}
+/* tiles */
+.live-tag.tiles.github {
+	fill: var(--color-success);
+	stroke: var(--text-h);
+}
+.live-tag.tiles.demo {
+	fill: var(--color-danger);
+	stroke: var(--text-h);
+}
+/* sfpa */
+.live-tag.sfpa.github {
+	fill: var(--color-danger);
+	stroke: var(--text-h);
+}
+.live-tag.sfpa.demo {
+	fill: var(--color-success);
+	stroke: var(--text-h);
+}
+
 /* ======================
 Projects Section
 */
@@ -46,20 +82,7 @@ Projects Section
 	display: flex;
 	gap: 1rem;
 }
-.project-card__icons {
-	margin-top: 0.5rem;
-	padding-bottom: 1rem;
-	display: flex;
-	gap: 1rem;
-}
-.project-card__icons svg {
-	width: 1.4rem;
-	fill: var(--text-p);
-	transition: var(--transition);
-}
-.project-card__icons svg:hover {
-	fill: var(--text-h);
-}
+
 .project-card__item p {
 	margin-top: -5px;
 }
