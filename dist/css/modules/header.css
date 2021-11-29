@@ -12,7 +12,7 @@ Navbar Section
 .navbar-container {
 	max-width: 70rem;
 	margin: auto;
-	padding: 1rem 1rem;
+	padding: 1rem 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -76,7 +76,6 @@ Hero Section
 .hero-col {
 	max-width: 70rem;
 	margin: auto;
-	padding: 0 1rem;
 }
 .hero-section h1 {
 	font-weight: 600;

@@ -19,11 +19,16 @@
 	--text-h: #203647;
 	--text-sh: rgba(32, 54, 71, 0.9);
 	--text-p: rgba(32, 54, 71, 0.8);
-	--btn-bg: linear-gradient(135deg, var(--primary) 10%, var(--primary-light) 100%);
+	--btn-bg: linear-gradient(
+		135deg,
+		var(--primary) 10%,
+		var(--primary-light) 100%
+	);
 	--btn-border: var(--primary-light);
 	--card-bg: var(--primary-bg);
 	--border-nav: #ccd4da;
 	--border: #14213d;
+	--border-r: 0.5rem;
 	--box-shadow: #aec2e6;
 	/* Sizing */
 	--font-size-xxsm: 0.675rem;
@@ -40,8 +45,10 @@
 	--transition: 0.2s ease-in-out;
 	--box-shadow-sm: 0px 1px 5px -1px var(--box-shadow-dark),
 		0px 2px 9px -6px var(--box-shadow-dark);
-	--box-shadow-md: 0px 0px 2px -1px rgba(0, 0, 0, 1), 0px 4px 12px -5px rgba(0, 0, 0, 1);
-	--box-shadow-lg: 0px 0px 2px -1px rgba(0, 0, 0, 1), 0px 6px 14px -5px rgba(0, 0, 0, 1);
+	--box-shadow-md: 0px 0px 2px -1px rgba(0, 0, 0, 1),
+		0px 4px 12px -5px rgba(0, 0, 0, 1);
+	--box-shadow-lg: 0px 0px 2px -1px rgba(0, 0, 0, 1),
+		0px 6px 14px -5px rgba(0, 0, 0, 1);
 	/* Images */
 	--aboutHeroImage: url('../images/desert-day.svg');
 }
@@ -119,12 +126,14 @@ a {
 
 /* Buttons */
 button {
+	color: var(--text-h);
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 500;
 	font-size: 1rem;
-	color: var(--white);
+	letter-spacing: 0.02em;
 	background: none;
 	border: none;
+	cursor: pointer;
 }
 .btn {
 	width: fit-content;
@@ -132,7 +141,6 @@ button {
 	background-color: var(--primary);
 	border: 1px solid var(--primary-light);
 	border-radius: 5px;
-	cursor: pointer;
 	transition: var(--transition);
 }
 .btn:hover {
@@ -140,7 +148,7 @@ button {
 }
 .btn-icon {
 	width: var(--font-size-md);
-	fill: var(--white);
+	fill: var(--text-h);
 	margin-left: 0.6rem;
 }
 /* hero button */

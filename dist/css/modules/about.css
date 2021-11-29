@@ -3,7 +3,7 @@ About Page
 */
 #about {
 	padding: 1rem;
-	background-color: var(--secondary-bg);
+	background-color: var(--primary-bg);
 }
 .about-hero-container {
 	max-width: 70rem;
@@ -15,7 +15,7 @@ About Page
 	width: 100%;
 	margin-top: 8rem;
 	margin-bottom: 5rem;
-	border-radius: .5rem;
+	border-radius: var(--border-r);
 	overflow: hidden;
 	box-shadow: var(--box-shadow-sm);
 	display: block; /* remove extra space below image */
@@ -28,7 +28,12 @@ About Page
 .about-content-container {
 	max-width: 70rem;
 	margin: auto;
-	padding: 2rem 0;
+	/* outline: 1px solid red; */
+}
+/* ever other mini section */
+.about__content__wrap:nth-child(odd) {
+	background-color: var(--secondary-bg);
+	border-radius: var(--border-r);
 }
 .about__content__wrap {
 	width: 100%;
@@ -37,6 +42,11 @@ About Page
 	flex-wrap: wrap;
 	justify-content: left;
 	align-items: flex-start;
+	padding: 2.8rem 1rem;
+}
+.about__content__wrap.ctn {
+	/* spacer */
+	border-bottom: 1px solid var(--border-nav);
 }
 .item__heading {
 	flex: 1;
@@ -55,15 +65,6 @@ About Page
 .item__info p {
 	font-size: var(--font-size-md);
 	color: var(--text-p);
-}
-.about-hr {
-	opacity: 0.0875;
-	border: 0;
-	margin: 2.8rem 0;
-	padding: 0;
-	width: 100%;
-	height: 1px;
-	background-color: var(--border);
 }
 .item__links {
 	width: auto;
