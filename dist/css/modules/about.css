@@ -109,4 +109,8 @@ About Page
 	.item__info {
 		padding-top: 1.6rem;
 	}
+	.about__content__wrap.ctn {
+		/* spacer */
+		border-bottom: 10px solid var(--secondary-bg);
+	}
 }
