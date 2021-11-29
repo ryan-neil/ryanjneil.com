@@ -2,18 +2,18 @@
 About Page
 */
 #about {
-	padding: 1rem;
 	background-color: var(--primary-bg);
 }
 .about-hero-container {
 	max-width: 70rem;
+	padding: 0 1rem;
+	padding-top: 8rem;
 	margin: auto;
 }
 .about-hero_image {
 	position: relative;
 	height: 45vh;
 	width: 100%;
-	margin-top: 8rem;
 	margin-bottom: 5rem;
 	border-radius: var(--border-r);
 	overflow: hidden;
@@ -27,8 +27,8 @@ About Page
 }
 .about-content-container {
 	max-width: 70rem;
+	padding: 0 1rem;
 	margin: auto;
-	/* outline: 1px solid red; */
 }
 /* ever other mini section */
 .about__content__wrap:nth-child(odd) {
@@ -97,8 +97,14 @@ About Page
 	.about-hero_image img {
 		object-position: left;
 	}
+	.about-content-container {
+		padding: 0 0;
+	}
 	.about__content__wrap {
 		flex-direction: column;
+	}
+	.about__content__wrap:nth-child(odd) {
+		border-radius: 0;
 	}
 	.item__info {
 		padding-top: 1.6rem;
