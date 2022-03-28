@@ -1,5 +1,4 @@
-// import { projects } from '../../data/projects.js';
-
+// projects data
 const projects = [
   {
     id: 1,
@@ -99,13 +98,10 @@ const projects = [
   },
 ];
 
+// render projects to the dom
 const renderProjects = () => {
   // get dom elements
-  const loadingDOM = document.querySelector('.loading');
   const projectsDOM = document.querySelector('.projects-list');
-
-  // show loading
-  // loadingDOM.style.visibility = 'visible';
 
   // render projects to DOM
   const allProjects = projects
@@ -177,8 +173,5 @@ const renderProjects = () => {
     .join('');
 
   projectsDOM.innerHTML = allProjects;
-
-  // hide loading
-  // loadingDOM.style.visibility = 'hidden';
 };
 renderProjects();
