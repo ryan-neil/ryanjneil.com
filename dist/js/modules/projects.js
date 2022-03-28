@@ -6,7 +6,7 @@ const renderProjects = () => {
   const projectsDOM = document.querySelector('.projects-list');
 
   // show loading
-  loadingDOM.style.visibility = 'visible';
+  // loadingDOM.style.visibility = 'visible';
 
   // render projects to DOM
   const allProjects = projects
@@ -80,6 +80,6 @@ const renderProjects = () => {
   projectsDOM.innerHTML = allProjects;
 
   // hide loading
-  loadingDOM.style.visibility = 'hidden';
+  // loadingDOM.style.visibility = 'hidden';
 };
 renderProjects();

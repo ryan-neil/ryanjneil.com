@@ -5,7 +5,7 @@ Section Colors
   background-color: var(--secondary-bg);
   padding: 3rem 0;
 }
-@media (max-width: 45em) {
+@media (max-width: 958px) {
   .projects-section {
     padding: 3rem 0;
   }
@@ -16,7 +16,6 @@ Section Headings
 */
 .projects-heading {
   margin-bottom: 3rem;
-  padding: 0 1rem;
 }
 .projects-heading h2 {
   font-size: var(--font-size-xxl);
@@ -24,6 +23,14 @@ Section Headings
   color: var(--text-h);
   letter-spacing: 0.025rem;
   line-height: var(--text-lineHeight-sm);
+}
+/* =================================
+[Projects] Responsive Media
+*/
+@media (max-width: 958px) {
+  .projects-heading {
+    padding: 0 1rem;
+  }
 }
 
 /* ======================
@@ -124,7 +131,7 @@ Projects Section
 /* =================================
 [Projects] Responsive Media
 */
-@media (max-width: 45em) {
+@media (max-width: 958px) {
   .projects-container {
     padding: 0;
   }

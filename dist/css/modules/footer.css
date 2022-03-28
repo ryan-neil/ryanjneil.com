@@ -2,125 +2,114 @@
 Contact Section
 */
 .contact-section {
-	padding: 3rem 1rem;
-	background-color: var(--primary-bg);
+  padding: 3rem 1rem;
+  background-color: var(--primary-bg);
 }
 .contact-container h2 {
-	font-size: var(--font-size-xxl);
-	font-weight: 600;
-	text-align: center;
-	letter-spacing: .025rem;
-	line-height: var(--text-lineHeight-sm);
-	margin: auto;
-	padding-bottom: 2rem;
-	color: var(--text-h);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.025rem;
+  line-height: var(--text-lineHeight-sm);
+  margin: auto;
+  padding-bottom: 2rem;
+  color: var(--text-h);
 
-	/* Text Gradient */
-	/* Create the gradient. */
-	background-image: var(--primary-gradient);
-	/* Set the background size and repeat properties. */
-	background-size: 100%;
-	background-repeat: repeat;
-	/* Use the text as a mask for the background. */
-	/* This will show the gradient as a text color rather than element bg. */
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  /* Text Gradient */
+  /* Create the gradient. */
+  background-image: var(--primary-gradient);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .contact-container p {
-	font-size: var(--font-size-lg);
-	text-align: center;
-	line-height: var(--text-lineHeight-md);
-	color: var(--text-h);
-	width: 40%;
-	margin: auto;
+  font-size: var(--font-size-lg);
+  text-align: center;
+  line-height: var(--text-lineHeight-md);
+  color: var(--text-h);
+  width: 40%;
+  margin: auto;
 }
 .contact-container a {
-	color: var(--text-h);
-	text-decoration: underline;
-	text-decoration-color: var(--text-h);
-	transition: var(--transition);
-	font-weight: 500;
+  color: var(--text-h);
+  text-decoration: underline;
+  text-decoration-color: var(--text-h);
+  transition: var(--transition);
+  font-weight: 500;
 }
 .contact-container a:hover {
-	color: var(--text-h);
+  color: var(--text-h);
 }
 .text-underline.sm.contact:hover::after {
-	height: 1.2rem;
-	transition: var(--transition);
+  height: 1.2rem;
+  transition: var(--transition);
 }
 /* =================================
 [Contact] Responsive Media
 */
-@media (min-width: 42.667em) and (max-width: 62em) {
-	.contact-section {
-		padding: 4rem 1rem;
-	}
-	.contact-container h2 {
-		width: 80%;
-	}
-	.contact-container p {
-		width: 75%;
-	}
-}
-@media (max-width: 42.611em) {
-	.contact-section {
-		padding: 4rem 1rem;
-	}
-	.contact-container h2 {
-		font-size: var(--font-size-xl);
-		width: 100%;
-	}
-	.contact-container p {
-		font-size: var(--font-size-md);
-		width: 100%;
-	}
+@media (max-width: 958px) {
+  .contact-section {
+    padding: 4rem 1rem;
+  }
+  .contact-container h2 {
+    font-size: var(--font-size-xl);
+    width: 100%;
+  }
+  .contact-container p {
+    font-size: var(--font-size-md);
+    width: 100%;
+  }
 }
 
 /* ==========================
 Footer Section
 */
 .footer-section {
-	background-color: var(--secondary-bg);
+  background-color: var(--secondary-bg);
 }
 .footer-container {
-	max-width: 70rem;
-	margin: auto;
-	padding: 6rem 1rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  max-width: 70rem;
+  margin: auto;
+  padding: 6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .footer__col {
-	font-size: var(--font-size-base);
-	font-weight: 500;
-	color: var(--text-p);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--text-p);
 }
 .footer__col a {
-	color: var(--text-p);
-	padding-left: 1.4rem;
-	transition: var(--transition);
+  color: var(--text-p);
+  padding-left: 1.4rem;
+  transition: var(--transition);
 }
 .footer__col a:hover {
-	color: var(--text-h);
+  color: var(--text-h);
 }
 /* =================================
 [Footer] Responsive Media
 */
-@media (max-width: 42.611em) {
-	.footer-container {
-		padding: 4rem 1rem;
-		flex-direction: column-reverse;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.footer__col.legal {
-		font-size: var(--font-size-sm);
-	}
-	.footer__col.social {
-		margin-bottom: 2rem;
-	}
-	.footer__col a {
-		margin: 0 1rem;
-		padding-left: 0;
-	}
+@media (max-width: 958px) {
+  .footer-container {
+    padding: 4rem 1rem;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__col.legal {
+    font-size: var(--font-size-sm);
+  }
+  .footer__col.social {
+    margin-bottom: 2rem;
+  }
+  .footer__col a {
+    margin: 0 1rem;
+    padding-left: 0;
+  }
 }

@@ -198,7 +198,7 @@ button {
   width: 100%;
   z-index: -1;
 }
-@media (max-width: 42.611em) {
+@media (max-width: 958px) {
   .text-underline.lg::after {
     height: 6px;
   }
