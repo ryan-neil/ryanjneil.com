@@ -96,10 +96,14 @@ Projects Section
   border: none;
   border-radius: 0.3rem;
 }
+.project-desc {
+  margin-top: -1rem;
+}
 .project-tech {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
+  margin-top: -1rem;
 }
 .tech-item {
   font-size: var(--font-size-xxsm);
@@ -150,5 +154,11 @@ Projects Section
   .project-card__item.img {
     border-radius: 0.6rem;
     padding: 0.5rem;
+  }
+  .project-desc {
+    margin-top: 0;
+  }
+  .project-tech {
+    margin-top: 0;
   }
 }

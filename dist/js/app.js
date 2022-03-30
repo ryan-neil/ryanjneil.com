@@ -38,3 +38,6 @@ const sectionFaders = () => {
   });
 };
 sectionFaders();
+
+// get year
+const getYear = () => {};
