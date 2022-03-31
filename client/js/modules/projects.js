@@ -103,6 +103,37 @@ const projects = [
       alt: 'Tiles App',
     },
   },
+  {
+    id: 4,
+    type: 'application',
+    name: 'Tiles',
+    description:
+      'Tiles is a todo app but instead of storing the data in local storage, it has a built-in API that communicates with a MongoDB cloud database to persists data in the cloud. By communicating with the API, the user can Create, Read, Update, and Delete todo tiles.',
+    technologies: [
+      'html',
+      'css',
+      'javascript',
+      'express',
+      'mongodb',
+      'netlify',
+    ],
+    links: {
+      github: {
+        href: 'https://github.com/ryan-neil/tiles',
+        title: 'Github Repo',
+        ariaLabel: 'Github Repo',
+      },
+      live: {
+        href: 'https://tiles-todo.netlify.app',
+        title: 'Visit Live Site',
+        ariaLabel: 'Visit Live Site',
+      },
+    },
+    image: {
+      src: './assets/tiles-screenshot.webp',
+      alt: 'Tiles App',
+    },
+  },
 ];
 
 // render projects to the dom
@@ -128,7 +159,7 @@ const renderProjects = () => {
 					<!-- Project content section -->
 					<div class="project-card__item text">
 						<!-- Type -->
-						<div class="project-type">${type}</div>
+						<div class="project-type">${item.type}</div>
 
 						<!-- Name -->
 						<h3 class="project-name">${name}</h3>

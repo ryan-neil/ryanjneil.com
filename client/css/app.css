@@ -14,6 +14,11 @@
   --white: #fffffe;
   --black: #0d0d0d;
   --primary-gradient: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+  /* Work Status */
+  --looking: rgba(28, 215, 96, 1);
+  --looking-shadow: drop-shadow(0px 1px 4px rgba(28, 215, 96, 0.7));
+  --open: rgba(255, 199, 44, 1);
+  --open-shadow: drop-shadow(0px 1px 4px rgba(255, 199, 44, 0.7));
   /* Typography */
   --text-h: #203647;
   --text-sh: rgba(32, 54, 71, 0.9);
