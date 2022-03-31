@@ -71,19 +71,10 @@ About Page
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-}
-.item__links-icon {
-  height: var(--font-size-md);
-  width: var(--font-size-md);
-  fill: var(--text-sh);
-  margin-right: 0.75rem;
+  gap: 0.5rem;
 }
 .item__links p:hover {
   color: var(--text-h);
-  transition: var(--transition);
-}
-.item__links-icon:hover {
-  fill: var(--text-h);
   transition: var(--transition);
 }
 /* =================================

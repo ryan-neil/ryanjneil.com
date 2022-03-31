@@ -1,20 +1,19 @@
 :root {
   /* Portfolio Palette */
-  --primary: #fe5261;
-  --secondary: rgb(45, 156, 253);
-  --primary-light: rgba(254, 82, 97, 0.5);
-  --primary-supa-light: rgba(254, 82, 97, 0.2);
-  --secondary-light: rgba(45, 156, 253, 0.5);
-  --secondary-supa-light: rgba(45, 156, 253, 0.2);
+  --primary: rgba(254, 172, 94, 1);
+  --primary-light: rgba(254, 172, 94, 0.5);
+  --primary-supa-light: rgba(254, 172, 94, 0.2);
+  --secondary: rgba(75, 192, 200, 1);
+  --secondary-light: rgba(75, 192, 200, 0.5);
+  --secondary-supa-light: rgba(75, 192, 200, 0.2);
+  --complimentary: rgba(199, 121, 208, 1);
+  --complimentary-light: rgba(199, 121, 208, 0.5);
+  --complimentary-supa-light: rgba(199, 121, 208, 0.2);
   --primary-bg: #fffffe;
   --secondary-bg: #f0f1f4;
   --white: #fffffe;
   --black: #0d0d0d;
   --primary-gradient: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
-  /* Accents */
-  --color-tertiary: #ffad42;
-  --color-success: #45fa39;
-  --color-danger: #fa3945;
   /* Typography */
   --text-h: #203647;
   --text-sh: rgba(32, 54, 71, 0.9);
@@ -56,12 +55,6 @@
 /* Dark mode */
 .darkmode {
   /* Portfolio Palette */
-  --primary: #fe5261;
-  --secondary: rgb(45, 156, 253);
-  --primary-light: #ff6b77;
-  --primary-supa-light: rgba(254, 82, 97, 0.2);
-  --secondary-light: rgba(45, 156, 253, 0.5);
-  --secondary-supa-light: rgba(45, 156, 253, 0.2);
   --primary-bg: #12232e;
   --secondary-bg: #203647;
   /* Typography */
@@ -72,16 +65,6 @@
   /* Borders */
   --border: var(--text-sh);
   --border-nav: var(--secondary-bg);
-}
-/* Dark mode toggle */
-.dark-mode-toggle {
-  fill: var(--text-h);
-  background: transparent;
-  cursor: pointer;
-  width: 1.8rem;
-  height: 1.8rem;
-  padding: 4px;
-  border: none;
 }
 
 /* Resets */
@@ -122,6 +105,8 @@ p {
 a {
   color: var(--text-p);
   text-decoration: none;
+
+  /* outline: 1px solid red; */
 }
 
 /* Buttons */
@@ -130,10 +115,26 @@ button {
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   font-size: 1rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   background: none;
   border: none;
   cursor: pointer;
+}
+button svg {
+  stroke: var(--text-p);
+  transition: var(--transition);
+}
+button svg:hover {
+  stroke: var(--text-h);
+}
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  stroke: var(--text-p);
+  transition: var(--transition);
+}
+.icon:hover {
+  stroke: var(--text-h);
 }
 .btn {
   width: fit-content;
@@ -148,7 +149,7 @@ button {
 }
 .btn-icon {
   width: var(--font-size-md);
-  fill: #12232e;
+  stroke: #12232e;
   margin-left: 0.6rem;
 }
 /* hero button */

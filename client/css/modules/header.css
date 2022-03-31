@@ -93,19 +93,12 @@ Hero Section
   color: var(--text-sh);
   line-height: var(--text-lineHeight-md);
 }
-.hero-links-wrapper {
-  margin: 1.4rem 0;
+.hero-icons {
+  width: 100%;
+  margin: 1rem 0;
   display: flex;
-}
-.hero__links-icon {
-  height: 1.5rem;
-  width: 1.5rem;
-  fill: var(--text-p);
-  transition: var(--transition);
-  margin-right: 1rem;
-}
-.hero__links-icon:hover {
-  fill: var(--text-h);
+  align-items: center;
+  gap: 1rem;
 }
 /* =================================
 [Hero] Web Responsive Media
