@@ -67,15 +67,18 @@ About Page
   color: var(--text-p);
 }
 .item__links {
-  width: auto;
-  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  width: max-content;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+.item__links:hover {
+  stroke: var(--text-h);
 }
 .item__links p:hover {
   color: var(--text-h);
-  transition: var(--transition);
 }
 /* =================================
 [About Page] Responsive Media

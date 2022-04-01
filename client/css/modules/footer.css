@@ -84,9 +84,12 @@ Footer Section
   font-weight: 500;
   color: var(--text-p);
 }
+.footer__col.social {
+  display: flex;
+  gap: 1rem;
+}
 .footer__col a {
   color: var(--text-p);
-  padding-left: 1.4rem;
   transition: var(--transition);
 }
 .footer__col a:hover {
