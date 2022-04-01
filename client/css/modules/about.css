@@ -34,6 +34,7 @@ About Page
 .about__content__wrap:nth-child(odd) {
   background-color: var(--secondary-bg);
   border-radius: var(--border-r);
+  box-shadow: var(--box-shadow-inset);
 }
 .about__content__wrap {
   width: 100%;
