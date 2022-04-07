@@ -145,7 +145,7 @@ button svg:hover {
 }
 .btn {
   width: fit-content;
-  padding: 0.6rem 1rem;
+  padding: 0.35rem 1rem;
   background-color: var(--primary);
   border: 1px solid var(--primary-light);
   border-radius: 5px;

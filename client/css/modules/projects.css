@@ -3,11 +3,11 @@ Section Colors
 */
 .projects-section {
   background-color: var(--secondary-bg);
-  padding: 3rem 0;
+  padding: 3rem 1rem;
 }
 @media (max-width: 958px) {
   .projects-section {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 }
 
@@ -31,6 +31,9 @@ Section Headings
   .projects-heading {
     padding: 0 1rem;
   }
+  .projects-heading h2 {
+    font-size: var(--font-size-xl);
+  }
 }
 
 /* ======================
@@ -40,7 +43,6 @@ Projects Section
   display: flex;
   flex-direction: column;
 
-  padding: 0 1rem;
   max-width: 70rem;
   margin: auto;
 }
@@ -129,9 +131,6 @@ Projects Section
 [Projects] Responsive Media
 */
 @media (max-width: 958px) {
-  .projects-container {
-    padding: 0;
-  }
   .projects-list {
     gap: 1rem;
   }

@@ -6,7 +6,15 @@ const projects = [
     name: 'GoSurf.io',
     description:
       'Built with JavaScript and runs as a Single Page Web Application (SPA). The goal of GoSurf is to simplify checking the conditions of your local surf spot by providing stripped down, live weather forecasts from around the world.',
-    technologies: ['react', 'styled-components', 'node', 'express', 'mongodb'],
+    technologies: [
+      'react',
+      'styled-components',
+      'node',
+      'express',
+      'mongodb',
+      'aws',
+      'netlify',
+    ],
     links: {
       github: {
         href: 'https://github.com/ryan-neil/gosurf',
@@ -14,7 +22,7 @@ const projects = [
         ariaLabel: 'Github Repo',
       },
       live: {
-        href: 'https://github.com/ryan-neil/gosurf',
+        href: 'https://www.gosurf.io/',
         title: 'Visit Live Site',
         ariaLabel: 'Visit Live Site',
       },

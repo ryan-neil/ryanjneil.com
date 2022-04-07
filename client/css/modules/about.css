@@ -3,10 +3,10 @@ About Page
 */
 #about {
   background-color: var(--primary-bg);
+  padding: 0 1rem;
 }
 .about-hero-container {
   max-width: 70rem;
-  padding: 0 1rem;
   padding-top: 8rem;
   margin: auto;
 }
@@ -27,7 +27,6 @@ About Page
 }
 .about-content-container {
   max-width: 70rem;
-  padding: 0 1rem;
   margin: auto;
 }
 /* ever other mini section */
@@ -85,15 +84,16 @@ About Page
 [About Page] Responsive Media
 */
 @media (max-width: 958px) {
+  #about {
+    padding: 0;
+  }
   .about-hero_image {
+    padding: 0 1rem;
     height: 40vh;
     margin-bottom: 3rem;
   }
   .about-hero_image img {
     object-position: left;
-  }
-  .about-content-container {
-    padding: 0 0;
   }
   .about__content__wrap {
     flex-direction: column;
