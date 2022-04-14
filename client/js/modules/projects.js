@@ -5,7 +5,7 @@ const projects = [
     type: 'application',
     name: 'GoSurf.io',
     description:
-      'Built with JavaScript and runs as a Single Page Web Application (SPA). The goal of GoSurf is to simplify checking the conditions of your local surf spot by providing stripped down, live weather forecasts from around the world.',
+      'Built with React and runs as a Single Page Web Application (SPA). The goal of GoSurf is to simplify checking the conditions of your local surf spot by providing stripped down, live weather forecasts from around the world.',
     technologies: [
       'react',
       'styled-components',
