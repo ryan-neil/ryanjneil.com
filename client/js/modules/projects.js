@@ -38,7 +38,7 @@ const projects = [
     name: 'San Francisco Post Acute',
     description:
       'Brought in to design the user interface (UI), user experience (UX), and develop their new website. The frontend was built with Vanilla JavaScript and the backend was built in PHP.',
-    technologies: ['html', 'css', 'javascript', 'php', 'sql'],
+    technologies: ['html', 'css', 'javascript', 'php', 'mysql'],
     links: {
       github: {
         href: '',
@@ -62,7 +62,7 @@ const projects = [
     name: 'Central Gardens Post Acute',
     description:
       'I was brought on to the CG team to design the user interface (UI), user experience (UX), and develop their new website. The frontend was built with Vanilla JavaScript and the backend was built in PHP.',
-    technologies: ['html', 'css', 'javascript', 'php', 'sql'],
+    technologies: ['html', 'css', 'javascript', 'php', 'mysql'],
     links: {
       github: {
         href: '',
