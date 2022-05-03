@@ -46,7 +46,7 @@ const projects = [
         ariaLabel: 'Github Repo (NDA)',
       },
       live: {
-        href: 'https://www.sfpostacute.com',
+        href: 'https://sfpa.netlify.app',
         title: 'Visit Live Site',
         ariaLabel: 'Visit Live Site',
       },
