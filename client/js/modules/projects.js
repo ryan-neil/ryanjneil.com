@@ -1,4 +1,3 @@
-// projects data
 const projects = [
   {
     id: 1,
@@ -6,15 +5,7 @@ const projects = [
     name: 'GoSurf.io',
     description:
       'Built with React and runs as a Single Page Web Application (SPA). The goal of GoSurf is to simplify checking the conditions of your local surf spot by providing stripped down, live weather forecasts from around the world.',
-    technologies: [
-      'react',
-      'styled-components',
-      'node',
-      'express',
-      'mongodb',
-      'aws',
-      'netlify',
-    ],
+    technologies: ['react', 'styled-components', 'node', 'express', 'mongodb', 'aws', 'netlify'],
     links: {
       github: {
         href: 'https://github.com/ryan-neil/gosurf',
@@ -86,14 +77,7 @@ const projects = [
     name: 'Tiles',
     description:
       'Tiles is a todo app but instead of storing the data in local storage, it has a built-in API that communicates with a MongoDB cloud database to persists data in the cloud. By communicating with the API, the user can Create, Read, Update, and Delete todo tiles.',
-    technologies: [
-      'html',
-      'css',
-      'javascript',
-      'express',
-      'mongodb',
-      'netlify',
-    ],
+    technologies: ['html', 'css', 'javascript', 'express', 'mongodb', 'netlify'],
     links: {
       github: {
         href: 'https://github.com/ryan-neil/tiles',
@@ -113,8 +97,7 @@ const projects = [
   },
 ];
 
-// render projects to the dom
-const renderProjects = () => {
+export const renderProjects = () => {
   // get dom elements
   const projectsDOM = document.querySelector('.projects-list');
 
@@ -191,4 +174,5 @@ const renderProjects = () => {
 
   projectsDOM.innerHTML = allProjects;
 };
+
 renderProjects();

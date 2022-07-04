@@ -23,11 +23,7 @@
   --text-h: #203647;
   --text-sh: rgba(32, 54, 71, 0.9);
   --text-p: rgba(32, 54, 71, 0.8);
-  --btn-bg: linear-gradient(
-    135deg,
-    var(--primary) 10%,
-    var(--primary-light) 100%
-  );
+  --btn-bg: linear-gradient(135deg, var(--primary) 10%, var(--primary-light) 100%);
   --btn-border: var(--primary-light);
   --card-bg: var(--primary-bg);
   --border-nav: #ccd4da;
@@ -48,13 +44,10 @@
   /* Styles */
   /* --box-shadow-inset: inset -2px 2px 2px 1px rgba(0, 0, 0, 0.05); */
   --box-shadow-inset: inset -2px 2px 4px 1px rgba(51, 51, 51, 0.075);
-  --transition: 0.2s ease-in-out;
-  --box-shadow-sm: 0px 1px 5px -1px var(--box-shadow-dark),
-    0px 2px 9px -6px var(--box-shadow-dark);
-  --box-shadow-md: 0px 0px 2px -1px rgba(0, 0, 0, 1),
-    0px 4px 12px -5px rgba(0, 0, 0, 1);
-  --box-shadow-lg: 0px 0px 2px -1px rgba(0, 0, 0, 1),
-    0px 6px 14px -5px rgba(0, 0, 0, 1);
+  --transition: 0.1s ease-in-out;
+  --box-shadow-sm: 0px 1px 5px -1px var(--box-shadow-dark), 0px 2px 9px -6px var(--box-shadow-dark);
+  --box-shadow-md: 0px 0px 2px -1px rgba(0, 0, 0, 1), 0px 4px 12px -5px rgba(0, 0, 0, 1);
+  --box-shadow-lg: 0px 0px 2px -1px rgba(0, 0, 0, 1), 0px 6px 14px -5px rgba(0, 0, 0, 1);
   /* Images */
   --aboutHeroImage: url('../assets/desert-day.svg');
 }
@@ -145,7 +138,7 @@ button svg:hover {
 }
 .btn {
   width: fit-content;
-  padding: 0.35rem 1rem;
+  padding: 0.55rem 1rem;
   background-color: var(--primary);
   border: 1px solid var(--primary-light);
   border-radius: 5px;
@@ -178,6 +171,13 @@ button svg:hover {
   to {
     transform: translateX(8px);
   }
+}
+
+.link {
+  transition: var(--transition);
+}
+.link:hover {
+  color: var(--complimentary);
 }
 
 /* Text underline */

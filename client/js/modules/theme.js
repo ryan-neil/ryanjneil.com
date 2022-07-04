@@ -1,12 +1,8 @@
 // Dark mode
-const toggleDarkMode = () => {
+export const toggleDarkMode = () => {
   // users' last choice will be remembered
   let darkMode = localStorage.getItem('darkMode');
   const darkModeToggle = document.querySelector('#dark-mode-toggle');
-
-  // check if dark mode is enabled
-  // if it's enabled, turn it off
-  // if it's disabled, turn it on
 
   // enable function
   const enableDarkMode = () => {
@@ -39,4 +35,5 @@ const toggleDarkMode = () => {
     }
   });
 };
+
 toggleDarkMode();

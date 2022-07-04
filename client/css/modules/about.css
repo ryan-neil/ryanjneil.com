@@ -62,7 +62,7 @@ About Page
 .item__info {
   flex: 1;
 }
-.item__info p {
+.item__info p li {
   font-size: var(--font-size-md);
   color: var(--text-p);
 }

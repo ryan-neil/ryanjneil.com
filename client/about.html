@@ -9,10 +9,7 @@
       name="description"
       content="Technology has always been my passion. I love the idea of building real, living, breathing web applications. Currently based in San Diego, California"
     />
-    <meta
-      name="google-site-verification"
-      content="l1YFmi85GHaxNGTT9qWgfcuY8LyBZcGmu-90Arpk44w"
-    />
+    <meta name="google-site-verification" content="l1YFmi85GHaxNGTT9qWgfcuY8LyBZcGmu-90Arpk44w" />
     <title>Ryan J. Neil</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon-96x96.png" />
     <!-- Fonts -->
@@ -26,6 +23,7 @@
     <link rel="stylesheet" href="./css/modules/header.css" />
     <link rel="stylesheet" href="./css/modules/footer.css" />
     <link rel="stylesheet" href="./css/modules/about.css" />
+    <link rel="stylesheet" href="./css/modules/work.css" />
   </head>
 
   <body>
@@ -78,9 +76,7 @@
                   stroke-linejoin="round"
                   class="feather feather-moon"
                 >
-                  <path
-                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
-                  ></path>
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
               </button>
             </div>
@@ -106,13 +102,13 @@
           </div>
           <div class="item__info">
             <p>
-              Born and raised in Southern California. If I'm not behind the
-              computer I'm usually surfing or looking for a pick-up soccer game.
+              Born and raised in Southern California. If I'm not behind the computer I'm usually
+              surfing or looking for a pick-up soccer game.
             </p>
             <br />
             <p>
-              Fun fact: After my last semester at Cal I was drafted in the 1st
-              round to play professional soccer here in the states.
+              Fun fact: After my last semester at Cal I was drafted in the 1st round to play
+              professional soccer here in the states.
             </p>
           </div>
         </article>
@@ -123,11 +119,9 @@
           </div>
           <div class="item__info">
             <p>
-              I got my undergrad in Architecture from the University of
-              California, Berkeley (2010-2015).
+              I got my undergrad in Architecture from the University of California, Berkeley
+              (2010-2015).
             </p>
-            <br />
-            <p>I am currently studying backend software engineering.</p>
           </div>
         </article>
         <!-- Wrap 3 -->
@@ -136,15 +130,10 @@
             <h3>Work.</h3>
           </div>
           <div class="item__info">
-            <p>
-              I've been a Project Manager for the past 4 years at an
-              architecture firm based out of San Clemente, CA.
-            </p>
-            <br />
-            <p>
-              I also lead the 3D innovation and technology department at the
-              firm.
-            </p>
+            <!-- Work content -->
+            <div class="work-container">
+              <div class="work-list"></div>
+            </div>
           </div>
         </article>
         <!-- Wrap 4 -->
@@ -174,11 +163,7 @@
               <p class="p-link">Email me!</p>
             </a>
             <!-- Linkedin -->
-            <a
-              class="item__links"
-              href="https://www.linkedin.com/in/ryanjneil/"
-              target="blank"
-            >
+            <a class="item__links" href="https://www.linkedin.com/in/ryanjneil/" target="blank">
               <svg
                 class="icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -201,11 +186,7 @@
               <p class="p-link">Linkedin</p>
             </a>
             <!-- Github -->
-            <a
-              class="item__links"
-              href="https://github.com/ryan-neil"
-              target="blank"
-            >
+            <a class="item__links" href="https://github.com/ryan-neil" target="blank">
               <svg
                 class="icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -226,11 +207,7 @@
               <p class="p-link">Github</p>
             </a>
             <!-- Twitter -->
-            <a
-              class="item__links"
-              href="https://twitter.com/josephskycrest"
-              target="blank"
-            >
+            <a class="item__links" href="https://twitter.com/josephskycrest" target="blank">
               <svg
                 class="icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -286,8 +263,7 @@
           job opportunities
         </h2>
         <p>
-          Have an exciting project where you need some help? Job openings? Send
-          me a message, and
+          Have an exciting project where you need some help? Job openings? Send me a message, and
           <a href="mailto:ryanjosephneil@gmail.com">
             <span class="text-underline sm contact">let's chat!</span>
           </a>
@@ -303,18 +279,16 @@
         </div>
         <div class="footer__col social">
           <a href="https://github.com/ryan-neil" target="blank">Github</a>
-          <a href="https://www.linkedin.com/in/ryanjneil/" target="blank"
-            >Linkedin</a
-          >
-          <a href="https://twitter.com/josephskycrest" target="blank"
-            >Twitter</a
-          >
+          <a href="https://www.linkedin.com/in/ryanjneil/" target="blank">Linkedin</a>
+          <a href="https://twitter.com/josephskycrest" target="blank">Twitter</a>
         </div>
       </div>
     </footer>
 
     <!-- JS -->
-    <script src="./js/app.js" defer></script>
-    <script src="./js/modules/theme.js"></script>
+    <script type="module" src="./js/app.js" defer></script>
+    <script type="module" src="./js/modules/faders.js" defer></script>
+    <script type="module" src="./js/modules/theme.js" defer></script>
+    <script type="module" src="./js/modules/work.js" defer></script>
   </body>
 </html>
