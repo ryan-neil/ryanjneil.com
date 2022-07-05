@@ -5,7 +5,8 @@ const work = [
     companyLink: 'https://www.coolerscreens.com/',
     position: 'Fullstack Software Engineer',
     date: 'Jun 2022—present',
-    description: "Ad-tech company that's changing the retail experience.",
+    description:
+      "A certified Privacy by Design Ad-tech company that's changing the retail experience. .",
     technologies: ['react', 'typescript', 'node', 'sql', 'typeorm', 'azure'],
   },
   {
