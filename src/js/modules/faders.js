@@ -10,7 +10,7 @@ export const navFader = () => {
 
 // Site section faders
 export const sectionFader = () => {
-  const faders = document.querySelectorAll('.fade-in');
+  const faderElements = document.querySelectorAll('.fade-in');
 
   const appearOptions = {
     threshold: 0.3,
@@ -28,7 +28,7 @@ export const sectionFader = () => {
     });
   }, appearOptions);
 
-  faders.forEach((fader) => {
+  faderElements.forEach((fader) => {
     appearOnScroll.observe(fader);
   });
 };

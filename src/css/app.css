@@ -60,7 +60,7 @@
   /* Typography */
   --text-h: rgba(254, 254, 254, 1);
   --text-p: rgba(254, 254, 254, 0.8);
-  --text-sh: rgba(254, 254, 254, 0.8);
+  --text-sh: rgba(254, 254, 254, 0.6);
   --box-shadow: #445c88;
   /* Borders */
   --border: var(--text-sh);
@@ -105,8 +105,6 @@ p {
 a {
   color: var(--text-p);
   text-decoration: none;
-
-  /* outline: 1px solid red; */
 }
 
 /* Buttons */

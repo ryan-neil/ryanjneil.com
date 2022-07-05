@@ -1,5 +1,5 @@
 [build]
-  publish = "client"
+  publish = "src"
 
 [dev]
-  publish = "client"
+  publish = "src"
