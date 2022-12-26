@@ -1,37 +1,39 @@
-// Nav fade in on scroll
 export const navFader = () => {
   window.addEventListener('scroll', function () {
-    let header = document.querySelector('header');
-    let windowPosition = window.scrollY > 75;
+    let header = document.querySelector('header')
+    let windowPosition = window.scrollY > 75
 
-    header.classList.toggle('scrolling-active', windowPosition);
-  });
-};
+    header.classList.toggle('scrolling-active', windowPosition)
+  })
+}
 
-// Site section faders
 export const sectionFader = () => {
-  const faderElements = document.querySelectorAll('.fade-in');
+  const faderElements = document.querySelectorAll('.fade-in')
 
   const appearOptions = {
     threshold: 0.3,
     rootMargin: '0px 0px 52px 0px',
-  };
+  }
 
-  const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+  const appearOnScroll = new IntersectionObserver(function (
+    entries,
+    appearOnScroll
+  ) {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) {
-        return;
+        return
       } else {
-        entry.target.classList.add('appear');
-        appearOnScroll.unobserve(entry.target);
+        entry.target.classList.add('appear')
+        appearOnScroll.unobserve(entry.target)
       }
-    });
-  }, appearOptions);
+    })
+  },
+  appearOptions)
 
   faderElements.forEach((fader) => {
-    appearOnScroll.observe(fader);
-  });
-};
+    appearOnScroll.observe(fader)
+  })
+}
 
-navFader();
-sectionFader();
+navFader()
+sectionFader()

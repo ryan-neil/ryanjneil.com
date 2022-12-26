@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,16 +8,17 @@
       name="description"
       content="Technology has always been my passion. I love the idea of building real, living, breathing web applications. Currently based in San Diego, California"
     />
-    <meta name="google-site-verification" content="l1YFmi85GHaxNGTT9qWgfcuY8LyBZcGmu-90Arpk44w" />
+    <meta
+      name="google-site-verification"
+      content="l1YFmi85GHaxNGTT9qWgfcuY8LyBZcGmu-90Arpk44w"
+    />
     <title>Ryan J. Neil</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon-96x96.png" />
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS -->
     <link rel="stylesheet" href="./css/app.css" />
     <link rel="stylesheet" href="./css/modules/header.css" />
     <link rel="stylesheet" href="./css/modules/projects.css" />
@@ -27,19 +27,15 @@
   </head>
 
   <body>
-    <!-- Navbar -->
     <header>
       <nav class="navbar">
         <div class="navbar-container">
-          <!-- Logo -->
           <div class="navbar__item">
             <div class="nav__logo">
               <a title="That's me!" href="#">Ryan J. Neil</a>
             </div>
           </div>
-          <!-- Elements Container -->
           <div class="navbar__item elements">
-            <!-- Button -->
             <div class="navbar__item-element">
               <a href="mailto:ryanjosephneil@gmail.com" class="btn nav">
                 <button>Get in touch</button>
@@ -61,7 +57,6 @@
                 </svg>
               </a>
             </div>
-            <!-- Dark-Light Toggle -->
             <div class="navbar__item-element">
               <button title="Toggle theme" id="dark-mode-toggle" class="icon">
                 <svg
@@ -76,7 +71,9 @@
                   stroke-linejoin="round"
                   class="feather feather-moon"
                 >
-                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                  <path
+                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                  ></path>
                 </svg>
               </button>
             </div>
@@ -85,30 +82,26 @@
       </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="hero" class="hero-section">
       <div class="hero-col fade-in">
-        <!-- Hero Text -->
         <h1>
-          <span class="text-underline lg">Software Engineer</span> currently based in San Diego,
-          California.
+          <span class="text-underline lg">Software Engineer</span> currently
+          based in San Diego, California.
         </h1>
 
-        <!-- Hero Description -->
         <h2>
-          Hello! My name is Ryan and I’m an architect turned software engineer. I love building fast
-          and light-weight full-stack applications.
-          <span class="text-underline sm">JavaScript</span> is my "native" programming language. I
-          primarily use it in the frontend with <span class="text-underline sm">React</span>/<span
-            class="text-underline sm"
-            >TypeScript</span
-          >
-          and in the backend with <span class="text-underline sm">Node</span> along side
+          Hello! My name is Ryan and I’m an architect turned software engineer.
+          I love building fast and light-weight full-stack applications.
+          <span class="text-underline sm">JavaScript</span> +
+          <span class="text-underline sm">TypeScript</span> is my "native"
+          programming language. I primarily use it in the frontend with
+          <span class="text-underline sm">React</span>
+          and in the backend with
+          <span class="text-underline sm">Node</span> +
+          <span class="text-underline sm">Express</span> along side
           <span class="text-underline sm">TypeORM</span>.
         </h2>
 
-        <!-- Work Status -->
-        <!-- <div class="work looking"> -->
         <div class="work open">
           <figure>
             <svg
@@ -126,13 +119,10 @@
               <circle cx="12" cy="12" r="10"></circle>
             </svg>
           </figure>
-          <!-- <h3>Currently looking for job opportunities</h3> -->
           <h3>Open to job opportunities</h3>
         </div>
 
-        <!-- Hero Links -->
         <div class="hero-icons">
-          <!-- Linkedin -->
           <a
             class="icon"
             title="LinkedIn"
@@ -158,8 +148,12 @@
               <circle cx="4" cy="4" r="2"></circle>
             </svg>
           </a>
-          <!-- Github -->
-          <a class="icon" title="Github" href="https://github.com/ryan-neil" target="blank">
+          <a
+            class="icon"
+            title="Github"
+            href="https://github.com/ryan-neil"
+            target="blank"
+          >
             <svg
               class="icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -178,8 +172,12 @@
               ></path>
             </svg>
           </a>
-          <!-- Twitter -->
-          <a class="icon" title="Twitter" href="https://twitter.com/josephskycrest" target="blank">
+          <a
+            class="icon"
+            title="Twitter"
+            href="https://twitter.com/josephskycrest"
+            target="blank"
+          >
             <svg
               class="icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +196,6 @@
               ></path>
             </svg>
           </a>
-          <!-- Resume -->
           <a
             class="icon"
             title="Resume"
@@ -222,7 +219,6 @@
           </a>
         </div>
 
-        <!-- Hero Button -->
         <a href="about.html" class="hero-btn-link">
           <button class="btn hero">
             Learn more about me!
@@ -247,22 +243,20 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
     <section class="projects-section">
       <div class="projects-container">
-        <!-- Projects heading -->
         <div class="projects-heading">
-          <h2>What I've been <span class="text-underline lg">working</span> on</h2>
+          <h2>
+            What I've been <span class="text-underline lg">working</span> on
+          </h2>
         </div>
 
-        <!-- Project content -->
         <div class="projects-content">
           <div class="projects-list"></div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <div class="contact-container fade-in">
         <h2>
@@ -270,7 +264,8 @@
           job opportunities
         </h2>
         <p>
-          Have an exciting project where you need some help? Job openings? Send me a message, and
+          Have an exciting project where you need some help? Job openings? Send
+          me a message, and
           <a href="mailto:ryanjosephneil@gmail.com">
             <span class="text-underline sm contact">let's chat!</span>
           </a>
@@ -278,7 +273,6 @@
       </div>
     </section>
 
-    <!-- Footer Section -->
     <footer id="footer" class="footer-section">
       <div class="footer-container">
         <div class="footer__col legal">
@@ -286,13 +280,16 @@
         </div>
         <div class="footer__col social">
           <a href="https://github.com/ryan-neil" target="blank">Github</a>
-          <a href="https://www.linkedin.com/in/ryanjneil/" target="blank">Linkedin</a>
-          <a href="https://twitter.com/josephskycrest" target="blank">Twitter</a>
+          <a href="https://www.linkedin.com/in/ryanjneil/" target="blank"
+            >Linkedin</a
+          >
+          <a href="https://twitter.com/josephskycrest" target="blank"
+            >Twitter</a
+          >
         </div>
       </div>
     </footer>
 
-    <!-- JS -->
     <script type="module" src="./js/app.js" defer></script>
     <script type="module" src="./js/modules/theme.js" defer></script>
     <script type="module" src="./js/modules/faders.js" defer></script>

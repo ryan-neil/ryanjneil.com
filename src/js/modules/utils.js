@@ -1,2 +1,1 @@
-// get year
-const getYear = () => {};
+const getYear = () => {}

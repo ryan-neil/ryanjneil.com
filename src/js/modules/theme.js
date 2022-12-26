@@ -1,39 +1,29 @@
-// Dark mode
 export const toggleDarkMode = () => {
-  // users' last choice will be remembered
-  let darkMode = localStorage.getItem('darkMode');
-  const darkModeToggle = document.querySelector('#dark-mode-toggle');
+  let darkMode = localStorage.getItem('darkMode')
+  const darkModeToggle = document.querySelector('#dark-mode-toggle')
 
-  // enable function
   const enableDarkMode = () => {
-    // add the class of darkMode to the body
-    document.body.classList.add('darkmode');
-    // update darkMode in the localStorage
-    localStorage.setItem('darkMode', 'enabled');
-  };
-
-  // disable function
-  const disableDarkMode = () => {
-    // remove the class of darkMode from the body
-    document.body.classList.remove('darkmode');
-    // update darkMode in the localStorage
-    localStorage.setItem('darkMode', null);
-  };
-
-  if (darkMode === 'enabled') {
-    enableDarkMode();
+    document.body.classList.add('darkmode')
+    localStorage.setItem('darkMode', 'enabled')
   }
 
-  // event toggle
-  darkModeToggle.addEventListener('click', () => {
-    // update darkMode every time someone clicks on the button
-    darkMode = localStorage.getItem('darkMode');
-    if (darkMode !== 'enabled') {
-      enableDarkMode();
-    } else {
-      disableDarkMode();
-    }
-  });
-};
+  const disableDarkMode = () => {
+    document.body.classList.remove('darkmode')
+    localStorage.setItem('darkMode', null)
+  }
 
-toggleDarkMode();
+  if (darkMode === 'enabled') {
+    enableDarkMode()
+  }
+
+  darkModeToggle.addEventListener('click', () => {
+    darkMode = localStorage.getItem('darkMode')
+    if (darkMode !== 'enabled') {
+      enableDarkMode()
+    } else {
+      disableDarkMode()
+    }
+  })
+}
+
+toggleDarkMode()
