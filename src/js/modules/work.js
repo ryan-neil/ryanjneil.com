@@ -1,12 +1,12 @@
 const work = [
   {
     id: 1,
-    company: 'Cooler Screens',
+    company: 'CoolerX',
     companyLink: 'https://www.coolerscreens.com/',
     position: 'Fullstack Software Engineer',
     date: 'Jun 2022—present',
     description:
-      "A certified Privacy by Design Ad-tech company that's changing the retail experience. .",
+      "A certified Privacy by Design Ad-tech company that's changing the retail experience",
     technologies: ['react', 'typescript', 'node', 'sql', 'typeorm', 'azure'],
   },
   {
@@ -26,7 +26,7 @@ const work = [
     position: 'Project Manager',
     date: 'May 2015—Jan 2021',
     description:
-      'Architectural services for projects around the globe including master planned communities, lifestyle/resorts, commercial/retail, residential, and sensitive habitat programs.',
+      'Architectural services for projects around the globe including master planned communities, lifestyle/resorts, commercial/retail, residential, and sensitive habitat programs',
     technologies: [],
   },
 ];
